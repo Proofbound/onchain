@@ -1,0 +1,39 @@
+---
+title: "Industry-Specific Applications"
+author: "Jason Apollo Lu"
+date: "2025-07-28"
+---
+
+# Industry-Specific Applications {#sec-industry-applications}
+
+OnChain Commerce across different business sectors
+
+## Retail and E-commerce
+
+Direct-to-consumer revolution
+
+*[Content to be expanded based on Chinese source material]*
+
+## Content and Media
+
+Creator economy transformation
+
+*[Content to be expanded based on Chinese source material]*
+
+## Manufacturing and Supply Chain
+
+Factory-to-consumer models
+
+*[Content to be expanded based on Chinese source material]*
+
+## Service Industries
+
+Professional services tokenization
+
+*[Content to be expanded based on Chinese source material]*
+
+## Real Estate and Hospitality
+
+High-value transaction applications
+
+*[Content to be expanded based on Chinese source material]*

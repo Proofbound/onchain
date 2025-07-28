@@ -1,0 +1,39 @@
+---
+title: "F2C System Case Study"
+author: "Jason Apollo Lu"
+date: "2025-07-28"
+---
+
+# F2C System Case Study {#sec-f2c-case-study}
+
+Detailed analysis of a working OnChain Commerce implementation
+
+## System Architecture
+
+Technical and economic design
+
+*[Content to be expanded based on Chinese source material]*
+
+## Reward Distribution Model
+
+The mathematics of fair sharing
+
+*[Content to be expanded based on Chinese source material]*
+
+## Multi-Level Benefits
+
+How different participants profit
+
+*[Content to be expanded based on Chinese source material]*
+
+## Risk Management
+
+Built-in safeguards and limitations
+
+*[Content to be expanded based on Chinese source material]*
+
+## Performance Metrics
+
+Real data from active implementations
+
+*[Content to be expanded based on Chinese source material]*

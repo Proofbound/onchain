@@ -1,0 +1,21 @@
+# CC Template Configuration
+# This file defines variables used in template processing
+
+# Basic book metadata
+title: "The Crypto Business Solution"
+author: "Jason Apollo Lu"
+date: "2025-07-28"
+
+# Website and publishing settings
+page_footer: "Copyright 2025 Global Business Chain, Inc."
+site_url: "https://proofbound.github.io/crypto-jason/"
+
+# Additional variables you can add:
+# description: "Book description"
+# version: "1.0.0"
+# publisher: "Publisher Name"
+# isbn: "978-0000000000"
+# keywords: ["keyword1", "keyword2"]
+
+# Custom variables for your templates
+# my_custom_variable: "custom value"

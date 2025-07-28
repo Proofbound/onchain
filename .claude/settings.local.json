@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(quarto:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

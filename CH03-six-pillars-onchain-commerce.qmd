@@ -1,0 +1,45 @@
+---
+title: "The Six Pillars of OnChain Commerce"
+author: "Jason Apollo Lu"
+date: "2025-07-28"
+---
+
+# The Six Pillars of OnChain Commerce {#sec-six-pillars}
+
+The architectural foundation of decentralized business
+
+## Pillar 1: Fair Profit-Sharing Mechanisms
+
+Automatic value distribution
+
+*[Content to be expanded based on Chinese source material]*
+
+## Pillar 2: Stable Token Value Support (AC Model)
+
+Real-world backing systems
+
+*[Content to be expanded based on Chinese source material]*
+
+## Pillar 3: Scalable Merchant Growth Ladders
+
+From micro to macro business
+
+*[Content to be expanded based on Chinese source material]*
+
+## Pillar 4: High-Trust Community Networks
+
+Beyond pyramid schemes
+
+*[Content to be expanded based on Chinese source material]*
+
+## Pillar 5: True Shared Revenue Design
+
+Participatory economics
+
+*[Content to be expanded based on Chinese source material]*
+
+## Pillar 6: High-Frequency Use Cases
+
+Real business, not speculation
+
+*[Content to be expanded based on Chinese source material]*
