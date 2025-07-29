@@ -1,5 +1,73 @@
 # Preface {.unnumbered}
 
-This is "The Crypto Business Solution" by Jason Apollo Lu.
 
-This book was created using Proofbound. To learn more about Proofbound books visit <https://proofbound.com>.
+**OnChain Commerce: The Third Commercial Revolution**
+
+In the past commercial world, "making money" equaled "making profit." But in the era of OnChain Commerce, "making money" equals "making circulation." We have discovered that what truly makes people wealthy is not storing money away, but using money in places that generate value exchange. The concept of "spending more to earn more" is not a pipe dream, but a realistic possibility built on blockchain technology and decentralized business logic.
+
+## The Foundation of a New Commercial Civilization
+
+OnChain Commerce represents an entirely new commercial civilization—not a singular platform, but a business ecosystem centered on value sharing, disintermediation, and trust reconstruction. It doesn't depend on any single country or company, nor does it center on advertising placement, but is built upon community participation and benefit co-creation.
+
+OnChain Commerce emerged not to oppose tradition, but to solve long-standing pain points in traditional business systems:
+
+- Why are more and more merchants' profits being consumed by platforms?
+- Why can't increased advertising spending bring loyal users?
+- Why doesn't consumer loyalty translate into any returns?
+
+These problems aren't coincidental—they stem from structural issues in our commercial design. OnChain Commerce offers a deployable solution to these core problems.
+
+## From "Earning Money" to "Earning Circulation"
+
+What is "wealth"? In the agricultural era, it was land. In the industrial era, it was capital and factories. In the digital era, it became traffic and attention. But regardless of how times change, one constant remains: true wealth comes from "flow."
+
+Traditional economic logic taught us to save money—converting income into bank deposits or real estate assets to ensure future security. However, under inflationary pressure and currency oversupply, the purchasing power of savings declines yearly. What truly brings appreciation is liquidity.
+
+When capital stagnates, it equals loss. When capital creates value through circulation, it not only doesn't shrink but can bring compound returns. This is the essential logic of "earning circulation"—not storage, but letting money flow, create, and redistribute within the right ecosystem.
+
+## The Evolution of Trust: From Gold to Community Consensus
+
+The evolution of currency is actually the evolution of "trust credentials":
+
+- **Gold Era**: Trust in currency came from physical assets
+- **Paper Money Era**: Trust transferred to nations and central banks  
+- **Digital Currency Era**: Trust is built on algorithms, consensus mechanisms, and communities
+
+The success of Bitcoin and Ethereum demonstrates that people have begun believing "decentralized" systems can maintain fair and transparent value exchange without manipulation by any single entity. This provides the technical foundation of trust for OnChain Commerce's emergence.
+
+## Web3: Restructuring Commercial Rules
+
+Web3 represents the next generation of the internet, but what truly changes business rules isn't just technology—it's the reconstruction of power structures and value distribution methods.
+
+Traditional business logic is "centralized": data belongs to platforms, users are merely data producers, value is captured by platforms, and participants cannot share profits. Rules are set by platforms, with merchants and users only able to accept them.
+
+Web3 proposes a disruptive logic: users own data, communities co-govern ecosystems, and value growth is shared.
+
+This value sovereignty allows users to truly "own their economic systems," forcing platforms to reconsider their relationship with participants. Through transparent rules, automatic execution, and fair distribution mechanisms, OnChain Commerce eliminates traditional intermediary exploitation while creating sustainable value growth.
+
+## The Six Pillars of OnChain Commerce
+
+The OnChain Commerce system can achieve implementation, expansion, and sustainability because its core lies in institutional design—a commercial operation model composed of six pillars:
+
+1. **Fair profit-sharing mechanism** - Every transaction automatically distributes benefits
+2. **Stable token value support model** - Real transaction backing, not speculation  
+3. **Scalable merchant growth ladder** - From individual creators to regional networks
+4. **High-trust community network** - Network nodes, not pyramid structures
+5. **True "shared" profit distribution** - Users are nodes, not members
+6. **High-frequency essential scenarios** - Real business, not concepts
+
+This represents a business ecosystem that can self-operate, self-expand, and self-appreciate, rather than any company's "platform system."
+
+## A Revolution Belonging to Everyone
+
+OnChain Commerce is launching a revolution that truly belongs to "everyone." In this revolution, you don't need background or large capital—you only need action, participation, and contribution.
+
+This book will step-by-step reveal OnChain Commerce's emergence, operational logic, institutional design, and global expansion model. More importantly, I hope it helps you open an entirely new perspective: in the future, not understanding OnChain Commerce will be like not understanding the internet 25 years ago.
+
+In the future business world, circulation is more important than ownership. We stand at the threshold of a real commercial revolution. And you will no longer be just a participant—you are a node in this revolution.
+
+::: {.callout-note}
+## About This Book
+
+This book was created using the Proofbound CC Template CLI tool. To learn more about Proofbound visit <https://proofbound.com>.
+:::

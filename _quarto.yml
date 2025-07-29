@@ -3,16 +3,16 @@ project:
   title: "The Crypto Business Solution"
   output-dir: docs
 
-  
+
 book:
   title: "The Crypto Business Solution"
   author: "Jason Apollo Lu"
   date: "2025-07-28"
+  cover-image: "assets/crypto-cover1.jpg"
   search: true
   downloads: [pdf, epub]
   chapters:
     - index.qmd
-    - intro.qmd
     - part: "Part I: The Foundation Revolution"
       chapters:
         - CH01-earning-money-to-earning-circulation.qmd
@@ -22,7 +22,7 @@ book:
       chapters:
         - CH04-spend-more-earn-more-system.qmd
         - CH05-beyond-mlm-ecommerce-franchising.qmd
-        - CH06-ideal-onchain-participants.qmd
+        - CH06-ideal-onchain-commerce-participants.qmd
     - part: "Part III: Global Implementation Strategy"
       chapters:
         - CH07-global-expansion-networks.qmd
@@ -37,7 +37,6 @@ book:
         - CH12-economic-paradigm-shift.qmd
         - CH13-challenges-and-solutions.qmd
         - CH14-the-path-forward.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib
