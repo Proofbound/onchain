@@ -1,3 +1,12 @@
 Jason “Apollo” Lu is a serial entrepreneur who has founded many successful businesses in diverse fields, from real estate to health. 
 
 He and his wife live in Southern California and are active in numerous local philanthropic charities.
+
+
+In an era where centralized platforms dominate commerce, Onchain Commerce Unveiled: describes a pragmatic blueprint for decentralized trade powered by Web3. Drawing from blockchain's core principles, this book explores how entrepreneurs can build self-sustaining ecosystems that eliminate intermediaries, foster trust, and distribute value equitably.
+
+At its heart are six foundational pillars: fair profit-sharing with automated mechanisms; stable token models backed by reserves; scalable growth ladders for merchants from solo operators to strategic networks; high-trust communities that transcend pyramid schemes; genuine shared revenue designs; and high-frequency applications addressing real-world business needs. These integrate into a robust framework where expenditures convert to assets, transactions drive rewards, and participants co-govern via DAOs.
+
+For forward-thinking entrepreneurs, this isn't just theory—it's an opportunity to pioneer models like cross-chain participation and community-driven circulation, potentially scaling globally without traditional gatekeepers. The book highlights edge cases, such as token volatility tradeoffs and governance challenges, while offering implementation details grounded in Ethereum and offline-first tools.
+
+Rooted in practical insights, this guide equips readers to navigate the shift from control to collaboration. Whether biohacking supply chains or innovating in AI-driven markets, Onchain Commerce Unveiled provides concrete strategies for capturing emerging value in a decentralized future.
