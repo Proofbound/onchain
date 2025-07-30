@@ -22,7 +22,7 @@ The platform trap affects consumers as well, though often in less visible ways. 
 
 Perhaps most significantly, the platform model creates systematic underinvestment in ecosystem development and participant success. Since platforms profit from their intermediary position rather than from the success of ecosystem participants, they have limited incentives to help merchants improve their businesses or to provide consumers with genuinely optimal outcomes. The platform's interests align with maintaining dependency and extracting value rather than creating conditions for broad-based prosperity among participants.
 
-![](/_resources/assets/images/ch2-overview.jpg)
+![](/assets/images/ch2-overview.jpg)
 
 ## Data Sovereignty Revolution
 

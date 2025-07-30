@@ -8,7 +8,7 @@ These pillars work together as an integrated system rather than independent comp
 
 Understanding these pillars requires examining both their individual functions and their collective operation within complete OnChain Commerce implementations. As we explored in Chapters 1 and 2, the shift toward circulation-based wealth creation and Web3's disruption of traditional platform models creates opportunities for new approaches to commercial organization. The six pillars provide the specific mechanisms through which these opportunities can be realized in practice.
 
-![The Six Pillars](/_resources/assets/images/Ch3-6-pillars.jpg)
+![The Six Pillars](/assets/images/Ch3-6-pillars.jpg)
 
 ## Pillar 1: Fair Profit-Sharing Mechanisms
 

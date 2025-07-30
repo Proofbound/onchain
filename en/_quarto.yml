@@ -7,7 +7,7 @@ book:
   title: "The Crypto Business Solution"
   author: "Apollo Sun"
   date: "2025-07-28"
-  cover-image: "_resources/assets/crypto-cover1.jpg"
+  cover-image: "assets/crypto-cover1.jpg"
   search: true
   downloads: [pdf, epub]
   chapters:

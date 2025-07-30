@@ -7,7 +7,7 @@ book:
   title: "鏈上商業解決方案"
   author: "孫波 (Apollo Sun)"
   date: "2025-07-28"
-  cover-image: "_resources/assets/crypto-cover1.jpg"
+  cover-image: "assets/crypto-cover1.jpg"
   search: true
   downloads: [pdf, epub]
   chapters:
