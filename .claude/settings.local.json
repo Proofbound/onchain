@@ -16,7 +16,8 @@
       "Bash(ln:*)",
       "Bash(for:*)",
       "Bash(do echo \"Creating Chinese version of $file\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }

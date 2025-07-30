@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ch10-industry-specific-applications.zh – The Crypto Business Solution</title>
+<title>10&nbsp; 第十章：特定行业应用 – 鏈上商業解決方案</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,32 +20,54 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./CH11-building-onchain-business.zh.html" rel="next">
+<link href="./CH09-f2c-system-case-study.zh.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,79 +91,258 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../_resources/css/custom.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">The Crypto Business Solution</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../en/"> 
-<span class="menu-text">English</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../zh/"> 
-<span class="menu-text">简体中文</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../zh-tw/"> 
-<span class="menu-text">繁體中文</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CH09-f2c-system-case-study.zh.html">第四部分：現實世界應用</a></li><li class="breadcrumb-item"><a href="./CH10-industry-specific-applications.zh.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">第十章：特定行业应用</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">鏈上商業解決方案</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./鏈上商業解決方案.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./鏈上商業解決方案.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">前言</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">第一部分：基礎革命</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH01-earning-money-to-earning-circulation.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">第一章：从赚钱到赚流通</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH02-web3-commercial-disruption.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">第二章：Web3的商业颠覆</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH03-six-pillars-onchain-commerce.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">第三章：链上商业的六大支柱</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">第二部分：轉型機制</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH04-spend-more-earn-more-system.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">第四章：“花得越多，赚得越多”运营系统</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH05-beyond-mlm-ecommerce-franchising.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">第五章：超越传销、电商和特许经营</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH06-ideal-onchain-commerce-participants.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">第六章：理想的链上商业参与者</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">第三部分：全球實施策略</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH07-global-expansion-networks.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">第七章：通过去中心化网络实现全球扩张</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH08-individual-economy-revolution.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">第八章：个体经济革命</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">第四部分：現實世界應用</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH09-f2c-system-case-study.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">第九章：F2C系统案例研究</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH10-industry-specific-applications.zh.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">第十章：特定行业应用</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH11-building-onchain-business.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">第十一章：建设您的链上业务</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">第五部分：商業未來</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH12-economic-paradigm-shift.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">第十二章：经济范式转变</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH13-challenges-and-solutions.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">第十三章：挑战与解决方案</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CH14-the-path-forward.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">第十四章：前进之路</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.zh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">参考文献</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-industry-applications" id="toc-sec-industry-applications" class="nav-link active" data-scroll-target="#sec-industry-applications">第十章：特定行业应用</a>
-  <ul class="collapse">
-  <li><a href="#零售和电子商务直接面向消费者革命" id="toc-零售和电子商务直接面向消费者革命" class="nav-link" data-scroll-target="#零售和电子商务直接面向消费者革命">零售和电子商务：直接面向消费者革命</a></li>
-  <li><a href="#内容和媒体创作者经济转型" id="toc-内容和媒体创作者经济转型" class="nav-link" data-scroll-target="#内容和媒体创作者经济转型">内容和媒体：创作者经济转型</a></li>
-  <li><a href="#制造和供应链工厂直销消费者模式" id="toc-制造和供应链工厂直销消费者模式" class="nav-link" data-scroll-target="#制造和供应链工厂直销消费者模式">制造和供应链：工厂直销消费者模式</a></li>
-  <li><a href="#服务行业专业服务代币化" id="toc-服务行业专业服务代币化" class="nav-link" data-scroll-target="#服务行业专业服务代币化">服务行业：专业服务代币化</a></li>
-  <li><a href="#房地产和酒店业高价值交易应用" id="toc-房地产和酒店业高价值交易应用" class="nav-link" data-scroll-target="#房地产和酒店业高价值交易应用">房地产和酒店业：高价值交易应用</a></li>
-  </ul></li>
+  <li><a href="#零售和电子商务直接面向消费者革命" id="toc-零售和电子商务直接面向消费者革命" class="nav-link active" data-scroll-target="#零售和电子商务直接面向消费者革命"><span class="header-section-number">10.1</span> 零售和电子商务：直接面向消费者革命</a></li>
+  <li><a href="#内容和媒体创作者经济转型" id="toc-内容和媒体创作者经济转型" class="nav-link" data-scroll-target="#内容和媒体创作者经济转型"><span class="header-section-number">10.2</span> 内容和媒体：创作者经济转型</a></li>
+  <li><a href="#制造和供应链工厂直销消费者模式" id="toc-制造和供应链工厂直销消费者模式" class="nav-link" data-scroll-target="#制造和供应链工厂直销消费者模式"><span class="header-section-number">10.3</span> 制造和供应链：工厂直销消费者模式</a></li>
+  <li><a href="#服务行业专业服务代币化" id="toc-服务行业专业服务代币化" class="nav-link" data-scroll-target="#服务行业专业服务代币化"><span class="header-section-number">10.4</span> 服务行业：专业服务代币化</a></li>
+  <li><a href="#房地产和酒店业高价值交易应用" id="toc-房地产和酒店业高价值交易应用" class="nav-link" data-scroll-target="#房地产和酒店业高价值交易应用"><span class="header-section-number">10.5</span> 房地产和酒店业：高价值交易应用</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CH09-f2c-system-case-study.zh.html">第四部分：現實世界應用</a></li><li class="breadcrumb-item"><a href="./CH10-industry-specific-applications.zh.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">第十章：特定行业应用</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-industry-applications" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">第十章：特定行业应用</span></span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="sec-industry-applications" class="level1">
-<h1>第十章：特定行业应用</h1>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p>链上商业在不同商业部门的应用</p>
 <p>我们在本书中探讨的链上商业原则和机制有效地适应了多样化的行业部门，每个部门都为实施呈现独特的机会和挑战。虽然基于代币的奖励、去中心化治理和协作价值创造的基本概念保持一致，但它们的具体应用根据行业特征、客户行为模式和商业模式要求而显著不同。</p>
 <p>理解这些特定行业的应用使企业主、企业家和投资者能够识别其特定部门内链上商业实施的最有前途的机会，同时避免可能破坏采用和成功的常见陷阱。每个行业部门为链上商业发展提供不同的优势，同时需要客户获取、商家协调和价值创造的不同方法。</p>
 <p>链上商业原则对特定行业的成功适应需要仔细考虑现有商业实践、监管环境、客户期望和表征不同部门的竞争动态。以下分析检查了链上商业如何在主要行业类别中创造价值，同时识别决定每个部门内实施成功的独特因素。</p>
-<section id="零售和电子商务直接面向消费者革命" class="level2">
-<h2 class="anchored" data-anchor-id="零售和电子商务直接面向消费者革命">零售和电子商务：直接面向消费者革命</h2>
+<section id="零售和电子商务直接面向消费者革命" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="零售和电子商务直接面向消费者革命"><span class="header-section-number">10.1</span> 零售和电子商务：直接面向消费者革命</h2>
 <p>零售和电子商务部门代表链上商业实施的理想环境，因为它们涉及频繁的客户交易、既定的支付系统和现有的忠诚度计划基础设施，这些可以通过基于代币的系统得到增强而不是替换。链上商业实现的直接面向消费者革命为零售商提供平台依赖的替代方案，同时与传统忠诚度计划相比创造卓越的客户体验。</p>
 <p>传统零售忠诚度计划受到有限实用性、复杂赎回过程和商家之间缺乏可转移性的困扰。链上商业代币通过提供即时实用性、通过自动应用的简单赎回和增加客户价值同时减少参与零售商运营复杂性的跨商家兼容性来解决这些限制。</p>
 <p>客户获取成本降低代表零售链上商业实施最重要的好处之一。传统零售客户通过广告和促销活动获取通常每客户成本20到50美元，而基于代币的系统通常通过代币奖励产生的推荐激励和口碑推广以每客户5到15美元实现类似结果。</p>
@@ -151,8 +352,8 @@ ul.task-list li input[type="checkbox"] {
 <p>当代币系统通过统一奖励结构连接数字和物理零售渠道时，线上到线下集成得到改善。客户可以通过在线购买赚取代币并在实体店赎回，或反之，创造传统零售商通过传统忠诚度计划难以实现的无缝全渠道体验。</p>
 <p>当多个零售商可以共享代币系统并交叉推广彼此的产品时，合作伙伴关系机会扩大。服装店、餐厅、娱乐场所和服务提供商等互补企业可以创建区域零售生态系统，为客户提供全面的生活方式好处，同时为参与商家产生推荐收入。</p>
 </section>
-<section id="内容和媒体创作者经济转型" class="level2">
-<h2 class="anchored" data-anchor-id="内容和媒体创作者经济转型">内容和媒体：创作者经济转型</h2>
+<section id="内容和媒体创作者经济转型" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="内容和媒体创作者经济转型"><span class="header-section-number">10.2</span> 内容和媒体：创作者经济转型</h2>
 <p>内容和媒体行业面临平台依赖、算法变化和广告收入波动的重大挑战，链上商业系统可以通过直接创作者货币化、受众所有权和协作内容资金模式解决这些挑战，这些模式比传统媒体经济学更有效地调整创作者和受众利益。</p>
 <p>创作者平台依赖已成为日益问题，因为社交媒体平台和内容分发系统捕获更大百分比的创作者收入，同时强加可能在一夜之间摧毁创作者业务的任意政策变化。链上商业使创作者能够通过基于代币的互动与其受众发展直接关系，无论平台政策或算法修改如何，这些关系都会持续。</p>
 <p>通过链上商业的受众货币化通常证明比传统广告收入或赞助交易更有利可图和可持续。创作者可以通过向网络商家的受众推荐、协作内容创作和社区建设活动获得代币，这些活动产生持续收入而不是来自广告或赞助安排的一次性支付。</p>
@@ -163,8 +364,8 @@ ul.task-list li input[type="checkbox"] {
 <p>当代币系统使创作者能够在不导航复杂的国际支付系统或货币转换要求的情况下将全球受众货币化时，国际货币化机会扩大。创作者可以更有效地服务国际受众，而全球受众可以通过通用代币系统支持创作者。</p>
 <p>当代币系统奖励知识分享和技能发展活动时，教育内容货币化得到改善，传统媒体货币化经常低估这些活动。教育创作者可以为帮助受众成员在商业、个人发展和专业技能方面成功获得持续补偿，而不是仅依赖广告收入或课程销售。</p>
 </section>
-<section id="制造和供应链工厂直销消费者模式" class="level2">
-<h2 class="anchored" data-anchor-id="制造和供应链工厂直销消费者模式">制造和供应链：工厂直销消费者模式</h2>
+<section id="制造和供应链工厂直销消费者模式" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="制造和供应链工厂直销消费者模式"><span class="header-section-number">10.3</span> 制造和供应链：工厂直销消费者模式</h2>
 <p>制造和供应链部门通过工厂直销消费者模式为链上商业实施提供独特机会，这些模式消除中介加价，同时提供传统制造分销系统很少实现的透明度、质量保证和直接客户关系。</p>
 <p>中介消除代表制造链上商业实施最重要的价值创造机会。传统制造分销经常涉及批发商、分销商和零售商，每个都添加加价，可能使最终客户价格相对于制造成本翻倍或三倍。通过链上商业的直接工厂到消费者模式可以捕获这些中介利润率在制造商和客户之间分配，同时降低最终价格。</p>
 <p>当区块链系统以使客户能够验证产品质量和真实性的方式跟踪产品来源、制造过程和分销渠道时，供应链透明度变得可实现。这种透明度经常为参与制造商要求溢价定价，同时建立支持长期业务发展的客户信任和忠诚度。</p>
@@ -175,8 +376,8 @@ ul.task-list li input[type="checkbox"] {
 <p>当代币系统使制造商和客户之间跨国际边界的直接关系成为可能而无需复杂的中介分销网络时，国际贸易便利化得到改善。制造公司可以更高效地服务全球市场，而客户直接从首选制造商访问产品。</p>
 <p>当客户代币贡献支持新产品开发、制造设备升级和使制造商和客户都受益的技术改进时，创新资金变得可能。这创造了传统风险投资或债务融资的替代方案，同时在产品创新和质量改进方面调整客户和制造商利益。</p>
 </section>
-<section id="服务行业专业服务代币化" class="level2">
-<h2 class="anchored" data-anchor-id="服务行业专业服务代币化">服务行业：专业服务代币化</h2>
+<section id="服务行业专业服务代币化" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="服务行业专业服务代币化"><span class="header-section-number">10.4</span> 服务行业：专业服务代币化</h2>
 <p>包括咨询、法律服务、医疗保健、教育和财务规划的专业服务行业通过代币化模式呈现链上商业实施的极好机会，这些模式改善客户获取、保留和推荐生成，同时为客户提供持续价值和关系好处。</p>
 <p>推荐系统优化解决专业服务提供商最重要的挑战之一：产生合格的潜在客户和新客户关系。基于代币的推荐系统通常比传统口碑营销产生三到五倍更多的推荐，同时为客户积极推广其受信任的服务提供商提供财务激励。</p>
 <p>当持续的代币奖励为客户保持与服务提供商的长期关系创造财务激励，同时使服务提供商能够通过网络参与好处提供额外价值时，客户关系增强发生。这经常导致增加的客户生命周期价值和减少参与专业人士的客户获取成本。</p>
@@ -187,8 +388,8 @@ ul.task-list li input[type="checkbox"] {
 <p>当区块链系统以使潜在客户能够客观评估服务提供商绩效的方式跟踪服务交付、客户满意度和结果实现时，绩效测量和透明度得到改善。这种透明度经常使高绩效专业人士能够实现溢价定价，同时保护客户免受糟糕服务体验。</p>
 <p>当多个专业人士可以通过共享代币系统和沟通平台协调复杂客户参与时，协作服务交付变得可能。这使较小的专业实践能够通过专业网络协作而不是需要广泛的内部能力来提供全面服务与较大公司竞争。</p>
 </section>
-<section id="房地产和酒店业高价值交易应用" class="level2">
-<h2 class="anchored" data-anchor-id="房地产和酒店业高价值交易应用">房地产和酒店业：高价值交易应用</h2>
+<section id="房地产和酒店业高价值交易应用" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="房地产和酒店业高价值交易应用"><span class="header-section-number">10.5</span> 房地产和酒店业：高价值交易应用</h2>
 <p>房地产和酒店业通过高价值交易应用呈现链上商业实施的独特机会，这些应用提供实质性代币奖励，同时创造长期客户关系和推荐网络，可以显著增强业务发展和客户满意度。</p>
 <p>当房地产购买、酒店预订和相关服务中涉及的实质性价值产生比例上大的代币奖励时，交易价值放大发生，这些奖励为客户创造有意义的财富建设机会。单一房地产交易或豪华酒店预订可以产生价值数千美元的代币奖励，为客户忠诚度和推荐创造强烈激励。</p>
 <p>房地产中的客户关系长久性经常跨越几十年，通过物业管理、再融资、额外购买以及向家人和朋友的推荐创造持续价值创造的机会。基于代币的系统可以维持这些关系，同时提供传统房地产服务在交易完成后很少提供的持续好处。</p>
@@ -201,7 +402,38 @@ ul.task-list li input[type="checkbox"] {
 <p>链上商业在这些主要行业部门的多样化应用展示了去中心化商业原则的灵活性和适应性，同时突出了决定不同商业环境内成功的具体优势和实施考虑。正如我们将在第十一章中探讨的，理解这些特定行业的应用使实用的实施规划成为可能，最大化成功链上商业采用和运营的可能性。</p>
 
 
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Buterin2013" class="csl-entry" role="listitem">
+Buterin, Vitalik. 2013. <em>Ethereum White Paper: A Next-Generation Smart Contract and Decentralized Application Platform</em>. <a href="https://ethereum.org/en/whitepaper/">https://ethereum.org/en/whitepaper/</a>.
+</div>
+<div id="ref-Buterin2017" class="csl-entry" role="listitem">
+———. 2017. <span>“On Public Goods in Ethereum.”</span> <em>Vitalik Buterin’s Blog</em>. <a href="https://vitalik.ca/general/2017/08/07/publicgoods.html">https://vitalik.ca/general/2017/08/07/publicgoods.html</a>.
+</div>
+<div id="ref-CoinMarketCap2023" class="csl-entry" role="listitem">
+CoinMarketCap. 2023. <span>“Crypto Economics Report 2023.”</span> CoinMarketCap. <a href="https://coinmarketcap.com/research/reports/">https://coinmarketcap.com/research/reports/</a>.
+</div>
+<div id="ref-DeFilippi2020" class="csl-entry" role="listitem">
+De Filippi, Primavera, and Aaron Wright. 2020. <em>Blockchain and the Law: The Rule of Code</em>. Harvard University Press.
+</div>
+<div id="ref-Nakamoto2008" class="csl-entry" role="listitem">
+Nakamoto, Satoshi. 2008. <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>. <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a>.
+</div>
+<div id="ref-Szabo1997" class="csl-entry" role="listitem">
+Szabo, Nick. 1997. <span>“The Idea of Smart Contracts.”</span> <em>Nick Szabo’s Essays, Papers, and Concise Tutorials</em>. <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html">http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html</a>.
+</div>
+<div id="ref-Tapscott2016" class="csl-entry" role="listitem">
+Tapscott, Don, and Alex Tapscott. 2016. <em>Blockchain Revolution: How the Technology Behind Bitcoin Is Changing Money, Business, and the World</em>. Portfolio Penguin.
+</div>
+<div id="ref-Voshmgir2019" class="csl-entry" role="listitem">
+Voshmgir, Shermin. 2019. <em>Token Economy: How the Web3 Reinvents the Internet</em>. Token Kitchen.
+</div>
+<div id="ref-Wood2014" class="csl-entry" role="listitem">
+Wood, Gavin. 2014. <span>“Ethereum: A Secure Decentralised Generalised Transaction Ledger.”</span> <em>Ethereum Project Yellow Paper</em>. <a href="https://ethereum.github.io/yellowpaper/paper.pdf">https://ethereum.github.io/yellowpaper/paper.pdf</a>.
+</div>
+<div id="ref-WorldBank2021" class="csl-entry" role="listitem">
+World Bank. 2021. <span>“Blockchain and Distributed Ledger Technologies in the Financial Sector.”</span> World Bank Group. <a href="https://www.worldbank.org/en/topic/financialsector/brief/blockchain-and-distributed-ledger-technologies-dlt">https://www.worldbank.org/en/topic/financialsector/brief/blockchain-and-distributed-ledger-technologies-dlt</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -604,20 +836,19 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>Copyright 2025 Global Business Chain, Inc. <br> <a href="en/">English</a> | <a href="zh/">简体中文</a> | <a href="zh-tw/">繁體中文</a></p>
-</div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./CH09-f2c-system-case-study.zh.html" class="pagination-link" aria-label="第九章：F2C系统案例研究">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">第九章：F2C系统案例研究</span></span>
+      </a>          
   </div>
-</footer>
+  <div class="nav-page nav-page-next">
+      <a href="./CH11-building-onchain-business.zh.html" class="pagination-link" aria-label="第十一章：建设您的链上业务">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">第十一章：建设您的链上业务</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
 
 
 
