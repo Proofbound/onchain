@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Quarto book project titled "The Crypto Business Solution" by Jason Apollo Lu. The project uses the Quarto publishing system to generate HTML and PDF versions of a book from Markdown source files.
+This is a Quarto book project titled "The Crypto Business Solution" by Apollo Sun (孫波). The project uses the Quarto publishing system to generate HTML and PDF versions of a book from Markdown source files.
 
 ## Architecture
 
