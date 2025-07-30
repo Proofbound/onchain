@@ -1,11 +1,11 @@
 project:
   type: book
-  title: "链上商业解决方案"
+  title: "链上商业崛起：第三次商业革命指南"
   output-dir: docs
 
 book:
-  title: "链上商业解决方案"
-  author: "孫波 (Apollo Sun)"
+  title: "链上商业崛起：第三次商业革命指南"
+  author: "孫波 (Apollo Sun) 著"
   date: "2025-07-28"
   cover-image: "assets/crypto-cover1.jpg"
   search: true

@@ -1,10 +1,10 @@
 project:
   type: website
-  title: "The Crypto Business Solution / 鏈上商業解決方案"
+  title: "Onchain Commerce Unveiled / 鏈上商業崛起"
   output-dir: docs
 
 website:
-  title: "The Crypto Business Solution"
+  title: "Onchain Commerce Unveiled"
   navbar:
     left:
       - text: "English"
