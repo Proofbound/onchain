@@ -1,0 +1,45 @@
+/* Custom CSS for bilingual book */
+
+/* Language switcher styling */
+.language-switcher {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.language-switcher a {
+    margin: 0 10px;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #495057;
+}
+
+.language-switcher a:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+/* Chinese font improvements */
+:lang(zh) {
+    font-family: "STSong", "Source Han Serif SC", "Noto Serif CJK SC", serif;
+    line-height: 1.8;
+}
+
+/* Column layout for language selection */
+.columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+}

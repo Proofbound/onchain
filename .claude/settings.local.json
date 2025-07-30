@@ -9,7 +9,14 @@
       "Bash(gh repo create:*)",
       "Bash(git remote add:*)",
       "Bash(git push:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(ln:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"Creating Chinese version of $file\")",
+      "Bash(done)"
     ],
     "deny": []
   }

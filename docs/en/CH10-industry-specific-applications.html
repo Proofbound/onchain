@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ch10-industry-specific-applications – The Crypto Business Solution</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../_resources/css/custom.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">The Crypto Business Solution</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../en/"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../zh/"> 
+<span class="menu-text">中文</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-industry-applications" id="toc-sec-industry-applications" class="nav-link active" data-scroll-target="#sec-industry-applications">Industry-Specific Applications</a>
+  <ul class="collapse">
+  <li><a href="#retail-and-e-commerce-direct-to-consumer-revolution" id="toc-retail-and-e-commerce-direct-to-consumer-revolution" class="nav-link" data-scroll-target="#retail-and-e-commerce-direct-to-consumer-revolution">Retail and E-commerce: Direct-to-Consumer Revolution</a></li>
+  <li><a href="#content-and-media-creator-economy-transformation" id="toc-content-and-media-creator-economy-transformation" class="nav-link" data-scroll-target="#content-and-media-creator-economy-transformation">Content and Media: Creator Economy Transformation</a></li>
+  <li><a href="#manufacturing-and-supply-chain-factory-to-consumer-models" id="toc-manufacturing-and-supply-chain-factory-to-consumer-models" class="nav-link" data-scroll-target="#manufacturing-and-supply-chain-factory-to-consumer-models">Manufacturing and Supply Chain: Factory-to-Consumer Models</a></li>
+  <li><a href="#service-industries-professional-services-tokenization" id="toc-service-industries-professional-services-tokenization" class="nav-link" data-scroll-target="#service-industries-professional-services-tokenization">Service Industries: Professional Services Tokenization</a></li>
+  <li><a href="#real-estate-and-hospitality-high-value-transaction-applications" id="toc-real-estate-and-hospitality-high-value-transaction-applications" class="nav-link" data-scroll-target="#real-estate-and-hospitality-high-value-transaction-applications">Real Estate and Hospitality: High-Value Transaction Applications</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="sec-industry-applications" class="level1">
+<h1>Industry-Specific Applications</h1>
+<p>OnChain Commerce across different business sectors</p>
+<p>The principles and mechanisms of OnChain Commerce that we have explored throughout this book adapt effectively across diverse industry sectors, each presenting unique opportunities and challenges for implementation. While the fundamental concepts of token-based rewards, decentralized governance, and collaborative value creation remain consistent, their specific applications vary significantly based on industry characteristics, customer behavior patterns, and business model requirements.</p>
+<p>Understanding these industry-specific applications enables business owners, entrepreneurs, and investors to identify the most promising opportunities for OnChain Commerce implementation within their specific sectors while avoiding common pitfalls that can undermine adoption and success. Each industry sector offers different advantages for OnChain Commerce development while requiring distinct approaches to customer acquisition, merchant coordination, and value creation.</p>
+<p>The successful adaptation of OnChain Commerce principles to specific industries requires careful consideration of existing business practices, regulatory environments, customer expectations, and competitive dynamics that characterize different sectors. The following analysis examines how OnChain Commerce creates value across major industry categories while identifying the unique factors that determine implementation success within each sector.</p>
+<section id="retail-and-e-commerce-direct-to-consumer-revolution" class="level2">
+<h2 class="anchored" data-anchor-id="retail-and-e-commerce-direct-to-consumer-revolution">Retail and E-commerce: Direct-to-Consumer Revolution</h2>
+<p>Retail and e-commerce sectors represent ideal environments for OnChain Commerce implementation because they involve frequent customer transactions, established payment systems, and existing loyalty program infrastructure that can be enhanced rather than replaced by token-based systems. The direct-to-consumer revolution enabled by OnChain Commerce provides retailers with alternatives to platform dependency while creating superior customer experiences compared to traditional loyalty programs.</p>
+<p>Traditional retail loyalty programs suffer from limited utility, complex redemption processes, and lack of transferability between merchants. OnChain Commerce tokens address these limitations by providing immediate utility, simple redemption through automatic application, and cross-merchant compatibility that increases customer value while reducing operational complexity for participating retailers.</p>
+<p>Customer acquisition cost reduction represents one of the most significant benefits for retail OnChain Commerce implementation. Traditional retail customer acquisition through advertising and promotional activities often costs twenty to fifty dollars per customer, while token-based systems typically achieve similar results for five to fifteen dollars per customer through referral incentives and word-of-mouth promotion generated by token rewards.</p>
+<p>Inventory turnover improvements result from increased customer retention and higher purchase frequency among token-rewarded customers. Retail merchants participating in OnChain Commerce systems typically report inventory turnover rates fifteen to thirty percent higher than non-participating competitors, leading to improved cash flow and reduced carrying costs that often exceed the profit margins allocated to token distribution.</p>
+<p>Cross-selling and up-selling opportunities increase when customers have token incentives to explore different product categories and higher-value items. Token rewards can be structured to provide enhanced benefits for specific product categories or purchase thresholds, guiding customer behavior toward higher-margin products while maintaining customer satisfaction through genuine value creation.</p>
+<p>Geographic expansion becomes more feasible for regional retail chains when token-based customer loyalty transfers across locations. Customers who accumulate tokens from one location have financial incentives to visit other network locations, enabling retail chains to expand into new markets with built-in customer acquisition advantages that reduce the risks typically associated with geographic expansion.</p>
+<p>Online-to-offline integration improves when token systems connect digital and physical retail channels through unified reward structures. Customers can earn tokens through online purchases and redeem them in physical stores, or vice versa, creating seamless omnichannel experiences that traditional retailers struggle to achieve through conventional loyalty programs.</p>
+<p>Partnership opportunities expand when multiple retailers can share token systems and cross-promote each other’s offerings. Complementary businesses such as clothing stores, restaurants, entertainment venues, and service providers can create regional retail ecosystems that provide customers with comprehensive lifestyle benefits while generating referral income for participating merchants.</p>
+</section>
+<section id="content-and-media-creator-economy-transformation" class="level2">
+<h2 class="anchored" data-anchor-id="content-and-media-creator-economy-transformation">Content and Media: Creator Economy Transformation</h2>
+<p>Content and media industries face significant challenges from platform dependency, algorithm changes, and advertising revenue volatility that OnChain Commerce systems can address through direct creator monetization, audience ownership, and collaborative content funding models that align creator and audience interests more effectively than traditional media economics.</p>
+<p>Creator platform dependency has become increasingly problematic as social media platforms and content distribution systems capture larger percentages of creator revenue while imposing arbitrary policy changes that can destroy creator businesses overnight. OnChain Commerce enables creators to develop direct relationships with their audiences through token-based interactions that persist regardless of platform policies or algorithm modifications.</p>
+<p>Audience monetization through OnChain Commerce typically proves more lucrative and sustainable than traditional advertising revenue or sponsorship deals. Creators can earn tokens through audience referrals to network merchants, collaborative content creation, and community building activities that generate ongoing income rather than one-time payments from advertising or sponsorship arrangements.</p>
+<p>Content quality incentives improve when creators earn rewards based on audience engagement and satisfaction rather than simply generating views or clicks for advertising purposes. Token-based reward systems can compensate creators for educational content, community moderation, audience support, and other valuable activities that traditional advertising models do not reward effectively.</p>
+<p>Audience relationship ownership enables creators to maintain direct communication and financial relationships with their supporters regardless of platform changes or restrictions. Audiences who receive token rewards through creator referrals develop financial incentives to maintain relationships with creators while creators build sustainable businesses based on audience value rather than platform access.</p>
+<p>Collaborative funding opportunities emerge when audiences can collectively support creator projects through token contributions while receiving ongoing benefits from creator success. This creates alternatives to traditional patron models or advertising-dependent content creation while aligning creator and audience interests more effectively than conventional media funding approaches.</p>
+<p>Cross-platform distribution becomes more effective when creators can offer unified token rewards regardless of which platforms audiences use to consume content. Creators can maintain consistent value propositions across multiple distribution channels while reducing platform dependency through diversified audience relationships and revenue streams.</p>
+<p>International monetization opportunities expand when token-based systems enable creators to monetize global audiences without navigating complex international payment systems or currency conversion requirements. Creators can serve international audiences more effectively while audiences worldwide can support creators through universal token systems.</p>
+<p>Educational content monetization improves when token systems reward knowledge sharing and skill development activities that traditional media monetization often undervalues. Educational creators can earn ongoing compensation for helping audience members succeed in business, personal development, and professional skills rather than depending solely on advertising revenue or course sales.</p>
+</section>
+<section id="manufacturing-and-supply-chain-factory-to-consumer-models" class="level2">
+<h2 class="anchored" data-anchor-id="manufacturing-and-supply-chain-factory-to-consumer-models">Manufacturing and Supply Chain: Factory-to-Consumer Models</h2>
+<p>Manufacturing and supply chain sectors offer unique opportunities for OnChain Commerce implementation through factory-to-consumer models that eliminate intermediary markups while providing transparency, quality assurance, and direct customer relationships that traditional manufacturing distribution systems rarely achieve.</p>
+<p>Intermediary elimination represents the most significant value creation opportunity for manufacturing OnChain Commerce implementation. Traditional manufacturing distribution often involves wholesalers, distributors, and retailers who each add markups that can double or triple final customer prices compared to manufacturing costs. Direct factory-to-consumer models through OnChain Commerce can capture these intermediary margins for distribution among manufacturers and customers while reducing final prices.</p>
+<p>Supply chain transparency becomes achievable when blockchain systems track product origins, manufacturing processes, and distribution channels in ways that enable customers to verify product quality and authenticity. This transparency often commands premium pricing for participating manufacturers while building customer trust and loyalty that supports long-term business development.</p>
+<p>Quality assurance improvements result from direct manufacturer-customer relationships that provide immediate feedback and accountability for product quality and customer service. Manufacturers who serve customers directly through OnChain Commerce systems typically achieve higher customer satisfaction scores while developing better products through direct customer input and feedback.</p>
+<p>Inventory optimization becomes more effective when manufacturers can predict customer demand through pre-orders, subscription systems, and direct customer communication rather than relying on intermediary purchasing decisions that may not reflect actual customer preferences. This often reduces inventory carrying costs while improving product availability and customer satisfaction.</p>
+<p>Customization opportunities expand when direct customer relationships enable manufacturers to offer personalized products and services that intermediary distribution systems cannot accommodate. Token-based systems can reward customers for providing design input, product feedback, and usage data that enable manufacturers to develop better products while customers receive compensation for their contributions.</p>
+<p>Regional manufacturing networks become viable when OnChain Commerce systems connect local manufacturers with regional customer bases through token-based loyalty and referral systems. This can reduce shipping costs and delivery times while supporting local economic development and providing customers with unique products from regional manufacturers.</p>
+<p>International trade facilitation improves when token systems enable direct relationships between manufacturers and customers across international boundaries without requiring complex intermediary distribution networks. Manufacturing companies can serve global markets more efficiently while customers access products directly from preferred manufacturers.</p>
+<p>Innovation funding becomes possible when customer token contributions support new product development, manufacturing equipment upgrades, and technology improvements that benefit both manufacturers and customers. This creates alternatives to traditional venture capital or debt financing while aligning customer and manufacturer interests in product innovation and quality improvement.</p>
+</section>
+<section id="service-industries-professional-services-tokenization" class="level2">
+<h2 class="anchored" data-anchor-id="service-industries-professional-services-tokenization">Service Industries: Professional Services Tokenization</h2>
+<p>Professional service industries including consulting, legal services, healthcare, education, and financial planning present excellent opportunities for OnChain Commerce implementation through tokenization models that improve client acquisition, retention, and referral generation while providing clients with ongoing value and relationship benefits.</p>
+<p>Referral system optimization addresses one of the most significant challenges for professional service providers: generating qualified leads and new client relationships. Token-based referral systems typically generate three to five times more referrals than traditional word-of-mouth marketing while providing financial incentives for clients to actively promote their trusted service providers.</p>
+<p>Client relationship enhancement occurs when ongoing token rewards create financial incentives for clients to maintain long-term relationships with service providers while enabling service providers to offer additional value through network participation benefits. This often leads to increased client lifetime value and reduced client acquisition costs for participating professionals.</p>
+<p>Service quality incentives improve when token rewards are tied to client satisfaction and successful outcomes rather than simply service delivery. Professionals who consistently achieve positive client results typically receive enhanced token allocations and referral opportunities while clients benefit from working with proven high-quality service providers.</p>
+<p>Cross-referral opportunities expand when multiple complementary service providers share token systems and refer clients to each other for specialized services. Legal professionals can refer clients to accountants, financial planners, consultants, and other professionals within their OnChain Commerce networks while earning referral income and providing enhanced value to their clients.</p>
+<p>Geographic expansion becomes more feasible for regional service providers when token-based client relationships transfer across service locations. Professionals who serve clients in multiple regions can maintain unified client relationships while expanding their service territories with reduced marketing costs and built-in client acquisition advantages.</p>
+<p>Continuing education incentives can be structured to reward both professionals and clients for ongoing skill development and knowledge sharing activities. Professionals who complete advanced training or certification programs can receive enhanced network benefits while clients who participate in educational activities receive token rewards for their engagement and learning.</p>
+<p>Performance measurement and transparency improve when blockchain systems track service delivery, client satisfaction, and outcome achievement in ways that enable potential clients to evaluate service provider performance objectively. This transparency often enables premium pricing for high-performing professionals while protecting clients from poor service experiences.</p>
+<p>Collaborative service delivery becomes possible when multiple professionals can coordinate complex client engagements through shared token systems and communication platforms. This enables smaller professional practices to compete with larger firms by providing comprehensive services through professional network collaboration rather than requiring extensive in-house capabilities.</p>
+</section>
+<section id="real-estate-and-hospitality-high-value-transaction-applications" class="level2">
+<h2 class="anchored" data-anchor-id="real-estate-and-hospitality-high-value-transaction-applications">Real Estate and Hospitality: High-Value Transaction Applications</h2>
+<p>Real estate and hospitality industries present unique opportunities for OnChain Commerce implementation through high-value transaction applications that provide substantial token rewards while creating long-term customer relationships and referral networks that can significantly enhance business development and customer satisfaction.</p>
+<p>Transaction value amplification occurs when the substantial values involved in real estate purchases, hospitality bookings, and related services generate proportionally large token rewards that create meaningful wealth-building opportunities for customers. A single real estate transaction or luxury hospitality booking can generate token rewards worth thousands of dollars, creating strong incentives for customer loyalty and referrals.</p>
+<p>Customer relationship longevity in real estate often spans decades, creating opportunities for ongoing value creation through property management, refinancing, additional purchases, and referrals to family and friends. Token-based systems can maintain these relationships while providing ongoing benefits that traditional real estate services rarely offer after transaction completion.</p>
+<p>Trust and transparency requirements in high-value transactions align well with blockchain-based verification and smart contract automation that can provide security and accountability for complex transactions while reducing fraud risks and dispute potential. This enhanced security often justifies premium pricing while improving customer confidence and satisfaction.</p>
+<p>Referral network expansion becomes particularly valuable in real estate and luxury hospitality where personal recommendations carry significant weight in customer decision-making. Token-based referral systems often generate referral rates substantially higher than traditional real estate and hospitality marketing while reducing customer acquisition costs for participating professionals.</p>
+<p>Service ecosystem integration enables real estate and hospitality providers to coordinate with mortgage lenders, insurance providers, contractors, decorators, and other related service providers through shared token systems that benefit all participants while providing customers with comprehensive service coordination and ongoing value.</p>
+<p>International customer service becomes more manageable when token systems enable consistent service delivery and customer relationship management across different countries and currencies. This is particularly valuable for hospitality providers serving international guests and real estate professionals working with international buyers and investors.</p>
+<p>Property management and maintenance services can be integrated with token systems to provide ongoing value for property owners while creating recurring revenue streams for service providers. Property owners can earn tokens through property management participation while service providers develop sustainable business relationships.</p>
+<p>Investment and development funding opportunities emerge when token systems enable customer participation in real estate development projects, hospitality expansion, and property improvement initiatives. Customers can contribute tokens toward development projects while receiving ongoing benefits from successful property development and hospitality business expansion.</p>
+<p>The diverse applications of OnChain Commerce across these major industry sectors demonstrate the flexibility and adaptability of decentralized business principles while highlighting the specific advantages and implementation considerations that determine success within different business contexts. As we will explore in Chapter 11, understanding these industry-specific applications enables practical implementation planning that maximizes the likelihood of successful OnChain Commerce adoption and operation.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025 Global Business Chain, Inc. <br> <a href="en/">English</a> | <a href="zh/">中文</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

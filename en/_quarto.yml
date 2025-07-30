@@ -1,0 +1,69 @@
+project:
+  type: book
+  title: "The Crypto Business Solution"
+  output-dir: docs
+
+book:
+  title: "The Crypto Business Solution"
+  author: "Jason Apollo Lu"
+  date: "2025-07-28"
+  cover-image: "_resources/assets/crypto-cover1.jpg"
+  search: true
+  downloads: [pdf, epub]
+  chapters:
+    - index.qmd
+    - part: "Part I: The Foundation Revolution"
+      chapters:
+        - CH01-earning-money-to-earning-circulation.qmd
+        - CH02-web3-commercial-disruption.qmd
+        - CH03-six-pillars-onchain-commerce.qmd
+    - part: "Part II: The Mechanics of Transformation" 
+      chapters:
+        - CH04-spend-more-earn-more-system.qmd
+        - CH05-beyond-mlm-ecommerce-franchising.qmd
+        - CH06-ideal-onchain-commerce-participants.qmd
+    - part: "Part III: Global Implementation Strategy"
+      chapters:
+        - CH07-global-expansion-networks.qmd
+        - CH08-individual-economy-revolution.qmd
+    - part: "Part IV: Real-World Applications"
+      chapters:
+        - CH09-f2c-system-case-study.qmd
+        - CH10-industry-specific-applications.qmd
+        - CH11-building-onchain-business.qmd
+    - part: "Part V: The Future of Commerce"
+      chapters:
+        - CH12-economic-paradigm-shift.qmd
+        - CH13-challenges-and-solutions.qmd
+        - CH14-the-path-forward.qmd
+    - references.qmd
+
+bibliography: references.bib
+nocite: '@*'
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    page-footer: 
+      center: |
+        Copyright 2025 Global Business Chain, Inc.
+        <br>
+        <a href="../zh/">中文版本</a> | <a href="../en/">English Version</a>
+    site-url: "https://proofbound.github.io/crypto-jason/"
+  pdf:
+    papersize: "Letter"
+    mainfont: "Georgia"
+    CJKmainfont: "STSong"
+    toc: true
+    documentclass: scrbook
+    geometry: paperwidth=6in,paperheight=9in
+    standalone: true
+    toc-depth: 2  
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{xeCJK}
+          \setCJKmainfont{STSong}
+    header-includes:
+      - \raggedbottom

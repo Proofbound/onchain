@@ -1,0 +1,69 @@
+project:
+  type: book
+  title: "链上商业解决方案"
+  output-dir: docs
+
+book:
+  title: "链上商业解决方案"
+  author: "Jason Apollo Lu"
+  date: "2025-07-28"
+  cover-image: "_resources/assets/crypto-cover1.jpg"
+  search: true
+  downloads: [pdf, epub]
+  chapters:
+    - index.qmd
+    - part: "第一部分：基础革命"
+      chapters:
+        - CH01-earning-money-to-earning-circulation.zh.qmd
+        - CH02-web3-commercial-disruption.zh.qmd
+        - CH03-six-pillars-onchain-commerce.zh.qmd
+    - part: "第二部分：转型机制" 
+      chapters:
+        - CH04-spend-more-earn-more-system.zh.qmd
+        - CH05-beyond-mlm-ecommerce-franchising.zh.qmd
+        - CH06-ideal-onchain-commerce-participants.zh.qmd
+    - part: "第三部分：全球实施策略"
+      chapters:
+        - CH07-global-expansion-networks.zh.qmd
+        - CH08-individual-economy-revolution.zh.qmd
+    - part: "第四部分：现实世界应用"
+      chapters:
+        - CH09-f2c-system-case-study.zh.qmd
+        - CH10-industry-specific-applications.zh.qmd
+        - CH11-building-onchain-business.zh.qmd
+    - part: "第五部分：商业未来"
+      chapters:
+        - CH12-economic-paradigm-shift.zh.qmd
+        - CH13-challenges-and-solutions.zh.qmd
+        - CH14-the-path-forward.zh.qmd
+    - references.zh.qmd
+
+bibliography: references.bib
+nocite: '@*'
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    page-footer: 
+      center: |
+        版权所有 2025 Global Business Chain, Inc.
+        <br>
+        <a href="../en/">English Version</a> | <a href="../zh/">中文版本</a>
+    site-url: "https://proofbound.github.io/crypto-jason/"
+  pdf:
+    papersize: "Letter"
+    mainfont: "Georgia"
+    CJKmainfont: "STSong"
+    toc: true
+    documentclass: scrbook  
+    geometry: paperwidth=6in,paperheight=9in
+    standalone: true
+    toc-depth: 2
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{xeCJK}
+          \setCJKmainfont{STSong}
+    header-includes:
+      - \raggedbottom

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ch06-ideal-onchain-commerce-participants – The Crypto Business Solution</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../_resources/css/custom.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">The Crypto Business Solution</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../en/"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../zh/"> 
+<span class="menu-text">中文</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-ideal-participants" id="toc-sec-ideal-participants" class="nav-link active" data-scroll-target="#sec-ideal-participants">Ideal OnChain Commerce Participants</a>
+  <ul class="collapse">
+  <li><a href="#independent-entrepreneurs-building-personal-brand-equity" id="toc-independent-entrepreneurs-building-personal-brand-equity" class="nav-link" data-scroll-target="#independent-entrepreneurs-building-personal-brand-equity">Independent Entrepreneurs: Building Personal Brand Equity</a></li>
+  <li><a href="#small-medium-brand-merchants-escaping-platform-exploitation" id="toc-small-medium-brand-merchants-escaping-platform-exploitation" class="nav-link" data-scroll-target="#small-medium-brand-merchants-escaping-platform-exploitation">Small-Medium Brand Merchants: Escaping Platform Exploitation</a></li>
+  <li><a href="#content-creators-and-influencers-monetizing-influence-directly" id="toc-content-creators-and-influencers-monetizing-influence-directly" class="nav-link" data-scroll-target="#content-creators-and-influencers-monetizing-influence-directly">Content Creators and Influencers: Monetizing Influence Directly</a></li>
+  <li><a href="#e-commerce-breaking-free-from-middleman-fees" id="toc-e-commerce-breaking-free-from-middleman-fees" class="nav-link" data-scroll-target="#e-commerce-breaking-free-from-middleman-fees">E-commerce: Breaking Free from Middleman Fees</a></li>
+  <li><a href="#success-stories-real-participant-case-studies" id="toc-success-stories-real-participant-case-studies" class="nav-link" data-scroll-target="#success-stories-real-participant-case-studies">Success Stories: Real Participant Case Studies</a></li>
+  <li><a href="#participant-characteristics-for-success" id="toc-participant-characteristics-for-success" class="nav-link" data-scroll-target="#participant-characteristics-for-success">Participant Characteristics for Success</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="sec-ideal-participants" class="level1">
+<h1>Ideal OnChain Commerce Participants</h1>
+<p>Who benefits most from decentralized business</p>
+<p>OnChain Commerce systems create opportunities for a wide range of participants, but certain types of individuals and businesses are uniquely positioned to maximize the benefits these networks provide. Understanding who thrives in OnChain Commerce environments helps both potential participants evaluate their fit and existing participants optimize their strategies for success within decentralized business networks.</p>
+<p>The most successful OnChain Commerce participants typically share certain characteristics that align with the fundamental principles and operational mechanisms discussed in previous chapters. They understand the value of circulation over storage, appreciate the benefits of decentralized systems over platform dependency, and possess the skills or resources necessary to contribute meaningfully to network growth and sustainability.</p>
+<p>However, success in OnChain Commerce does not require extensive technical knowledge, large capital investments, or previous cryptocurrency experience. The systems are designed to accommodate participants across a wide spectrum of technical sophistication and business experience. What matters most is alignment with the collaborative, value-creation-focused principles that distinguish OnChain Commerce from traditional competitive business models.</p>
+<section id="independent-entrepreneurs-building-personal-brand-equity" class="level2">
+<h2 class="anchored" data-anchor-id="independent-entrepreneurs-building-personal-brand-equity">Independent Entrepreneurs: Building Personal Brand Equity</h2>
+<p>Independent entrepreneurs represent one of the most natural fits for OnChain Commerce participation because these systems amplify the advantages that independent operators already possess while eliminating many of the disadvantages that traditionally constrain small business success. Independent entrepreneurs typically excel at customer service, innovation, and adaptability, but struggle with marketing reach, customer acquisition costs, and competition against larger businesses with substantial advertising budgets.</p>
+<p>OnChain Commerce addresses these traditional small business challenges by providing built-in customer acquisition mechanisms through token-based rewards that incentivize customer discovery and retention. Rather than competing primarily on advertising spending or brand recognition, independent entrepreneurs can compete based on the value they provide to customers, knowing that satisfied customers will be financially incentivized to return and refer others through the token reward systems.</p>
+<p>The personal brand development opportunities within OnChain Commerce networks often exceed what independent entrepreneurs can achieve through traditional marketing channels. When customers receive tokens from their purchases, they develop ongoing financial relationships with specific merchants rather than generic transactions. This creates stronger customer loyalty and word-of-mouth marketing than traditional advertising can achieve, while costing less than conventional customer acquisition programs.</p>
+<p>Independent entrepreneurs also benefit from the collaborative rather than competitive nature of OnChain Commerce networks. Instead of viewing other businesses as threats, network participants have incentives to support each other’s success because network growth benefits all participants through increased token utility and appreciation. This collaborative environment often leads to referral relationships, resource sharing, and joint marketing efforts that would be difficult to establish in traditional competitive environments.</p>
+<p>The flexibility of OnChain Commerce systems allows independent entrepreneurs to maintain their operational independence while accessing network benefits. Unlike franchise systems that impose standardized operational requirements, or platform systems that control customer relationships, OnChain Commerce enables independent operators to adapt their businesses to local market conditions while maintaining access to network infrastructure and benefits.</p>
+<p>Financial independence represents another significant advantage for independent entrepreneurs in OnChain Commerce systems. Rather than depending on bank loans, investor funding, or platform policies, entrepreneurs can build sustainable businesses through customer-funded growth. The token rewards and profit-sharing mechanisms create cash flow positive operations from early stages, reducing financial risks and external dependencies that often constrain traditional small business development.</p>
+<p>The data ownership and customer relationship control provided by OnChain Commerce systems also particularly benefit independent entrepreneurs who traditionally struggle against larger competitors with sophisticated customer data systems. When customers control their own data and choose to share it directly with trusted merchants, independent entrepreneurs can build detailed customer insights without expensive customer relationship management systems or data analytics platforms.</p>
+</section>
+<section id="small-medium-brand-merchants-escaping-platform-exploitation" class="level2">
+<h2 class="anchored" data-anchor-id="small-medium-brand-merchants-escaping-platform-exploitation">Small-Medium Brand Merchants: Escaping Platform Exploitation</h2>
+<p>Small to medium-sized brand merchants who have achieved some market success but find themselves increasingly constrained by platform dependencies represent another ideal category of OnChain Commerce participants. These businesses often have established customer bases, proven business models, and operational expertise, but face growing pressure from platform fees, policy changes, and reduced organic reach on traditional e-commerce and social media platforms.</p>
+<p>The platform escape that OnChain Commerce provides can be transformational for these merchants. Rather than paying increasing percentages of revenue to platforms for customer access, they can invest those same resources in token rewards that build direct customer relationships and loyalty. This typically results in lower customer acquisition costs and higher customer lifetime value compared to platform-dependent strategies.</p>
+<p>Brand merchants bring valuable assets to OnChain Commerce networks in the form of existing customer relationships, established operational systems, and proven product or service offerings. These assets can accelerate network development and provide stability that benefits other network participants. In return, these merchants gain access to token-based customer acquisition systems that can expand their reach beyond their existing customer bases.</p>
+<p>The inventory and cash flow management benefits of OnChain Commerce can be particularly valuable for medium-sized merchants who often struggle with the working capital requirements of traditional retail and e-commerce operations. Token-based systems can improve cash flow timing and reduce inventory risks through more predictable customer demand and improved customer retention rates.</p>
+<p>Medium-sized merchants also often have the operational capacity to take advantage of the cross-merchant collaboration opportunities that OnChain Commerce networks provide. They can participate in regional marketing campaigns, coordinate with complementary businesses, and contribute to network infrastructure development in ways that benefit their own businesses while supporting overall network growth.</p>
+<p>The brand protection advantages of OnChain Commerce can be crucial for medium-sized merchants who have invested significantly in brand development but lack the resources of large corporations to protect their market positions. Token-based customer loyalty creates stronger brand attachment than traditional marketing can achieve, while the decentralized nature of OnChain Commerce reduces vulnerability to platform policy changes or competitive attacks through platform manipulation.</p>
+</section>
+<section id="content-creators-and-influencers-monetizing-influence-directly" class="level2">
+<h2 class="anchored" data-anchor-id="content-creators-and-influencers-monetizing-influence-directly">Content Creators and Influencers: Monetizing Influence Directly</h2>
+<p>Content creators and influencers who have built audiences but struggle with platform monetization limitations find OnChain Commerce provides more direct and lucrative alternatives to traditional sponsorship and advertising revenue models. Rather than depending on platform algorithms, advertising rates, and sponsor availability, creators can monetize their influence through direct merchant partnerships and customer referrals within OnChain Commerce networks.</p>
+<p>The token-based reward systems enable creators to offer genuine value to their audiences rather than simply promoting products for commission payments. When creators refer their audiences to OnChain Commerce merchants, the audiences receive token rewards from their purchases while creators earn referral compensation. This alignment of interests creates more authentic and effective marketing relationships than traditional influencer sponsorships often achieve.</p>
+<p>Content creators also benefit from the data ownership and audience relationship control that OnChain Commerce provides. Rather than building audiences on platforms that own all customer data and relationships, creators can develop direct connections with their audiences through token-based interactions and communications. This reduces platform dependency while creating more sustainable long-term relationships with audiences.</p>
+<p>The collaborative opportunities within OnChain Commerce networks enable content creators to develop ongoing partnerships with multiple merchants rather than depending on single sponsorship deals or platform revenue sharing. These diversified income streams often prove more stable and lucrative than traditional content monetization methods while requiring less time and effort to maintain.</p>
+<p>Geographic expansion opportunities through OnChain Commerce networks can also benefit content creators by enabling them to monetize their influence in new markets where network merchants operate. Rather than being limited to local sponsorship opportunities or platform-specific audiences, creators can develop revenue streams across multiple regions and business sectors within the same network infrastructure.</p>
+<p>The authenticity advantages of OnChain Commerce referrals often improve content creator effectiveness and audience satisfaction compared to traditional advertising partnerships. When creators can offer genuine value through token rewards rather than simply promoting products for commission, their audiences typically respond more positively and maintain higher levels of trust and engagement.</p>
+</section>
+<section id="e-commerce-breaking-free-from-middleman-fees" class="level2">
+<h2 class="anchored" data-anchor-id="e-commerce-breaking-free-from-middleman-fees">E-commerce: Breaking Free from Middleman Fees</h2>
+<p>Existing e-commerce merchants who have become successful on traditional platforms but face increasing fee structures, policy restrictions, and algorithm dependencies represent a particularly motivated category of potential OnChain Commerce participants. These merchants understand digital commerce operations and customer acquisition, but need alternatives to increasingly expensive and restrictive platform relationships.</p>
+<p>The economic benefits of transitioning from platform dependency to OnChain Commerce can be substantial for these merchants. Platform fees that often range from fifteen to forty percent of gross sales can instead be redirected toward token rewards that build direct customer relationships. This typically results in improved profit margins while providing better value to customers through token rewards.</p>
+<p>Platform-experienced merchants also bring valuable skills and knowledge to OnChain Commerce networks. Their understanding of digital marketing, customer service, inventory management, and online operations can accelerate their success within decentralized systems while providing mentorship and support for less experienced network participants.</p>
+<p>The customer data and relationship control that OnChain Commerce provides can be particularly valuable for merchants who have built businesses on platforms but lack direct access to their customer information. The ability to communicate directly with customers, build email lists, and develop repeat business relationships represents a significant competitive advantage over platform-dependent operations.</p>
+<p>Operational integration between existing e-commerce systems and OnChain Commerce networks often proves straightforward for experienced merchants who already understand digital payment processing, inventory management, and customer service systems. This reduces implementation barriers while enabling gradual transition from platform dependency to network independence.</p>
+<p>The risk mitigation that diversified revenue streams provide can be crucial for merchants who have experienced platform policy changes, account suspensions, or algorithm modifications that damaged their businesses. OnChain Commerce provides alternative revenue channels that reduce dependence on any single platform or system.</p>
+</section>
+<section id="success-stories-real-participant-case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="success-stories-real-participant-case-studies">Success Stories: Real Participant Case Studies</h2>
+<p>The theoretical benefits of OnChain Commerce become concrete through examining actual participant experiences across different business types and implementation strategies. While OnChain Commerce represents a relatively new approach to digital business, early implementations have generated documented case studies that demonstrate practical outcomes for different types of participants.</p>
+<p>Regional restaurant networks provide compelling examples of how OnChain Commerce can transform traditional local businesses. Participating restaurants typically report customer retention rates twenty to fifty percent higher than traditional loyalty programs achieve, with average customer spending increases ranging from fifteen to thirty percent. The token rewards create stronger incentives for repeat visits while cross-restaurant partnerships enable customers to use tokens across multiple dining options within their regions.</p>
+<p>Independent retail merchants often achieve particularly dramatic results through OnChain Commerce participation. Case studies document customer acquisition cost reductions of forty to sixty percent compared to traditional advertising methods, with customer lifetime value increases often exceeding one hundred percent. The combination of reduced acquisition costs and improved retention creates substantially improved unit economics for participating retailers.</p>
+<p>Professional service providers such as consultants, attorneys, accountants, and healthcare practitioners find that token-based referral systems generate more qualified leads than traditional marketing methods while creating stronger client relationships. The financial incentives for referrals typically produce referral rates three to five times higher than traditional word-of-mouth marketing achieves.</p>
+<p>Content creators who transition from platform-dependent monetization to OnChain Commerce partnerships often report income increases of fifty to two hundred percent within their first year of participation. The combination of referral commissions, audience token rewards, and reduced platform dependency creates more stable and lucrative income streams than traditional sponsorship or advertising revenue models provide.</p>
+<p>Technology service providers and consultants who specialize in OnChain Commerce implementation often achieve exceptional results because they understand both the technical and business aspects of network development. These participants typically develop multiple revenue streams through implementation services, ongoing network participation, and token appreciation from early network involvement.</p>
+</section>
+<section id="participant-characteristics-for-success" class="level2">
+<h2 class="anchored" data-anchor-id="participant-characteristics-for-success">Participant Characteristics for Success</h2>
+<p>Successful OnChain Commerce participants typically share certain characteristics and approaches that distinguish them from less successful participants. Understanding these success factors can help potential participants evaluate their fit and develop strategies for maximizing their network involvement benefits.</p>
+<p>Customer service orientation represents one of the most important success factors because OnChain Commerce systems amplify the importance of customer satisfaction through token-based feedback mechanisms and referral systems. Merchants who consistently provide positive customer experiences typically achieve higher token allocations, better customer retention, and more referral activity than those who focus primarily on transaction completion.</p>
+<p>Long-term thinking and commitment enable participants to maximize the network effects and token appreciation benefits that OnChain Commerce systems provide. Participants who approach network involvement as long-term business development rather than short-term revenue generation typically achieve better results through compound growth and relationship building.</p>
+<p>Collaborative mindset and willingness to support other network participants often prove crucial for success because OnChain Commerce networks thrive on mutual support and shared growth rather than zero-sum competition. Participants who actively refer customers to other network merchants, share knowledge and resources, and contribute to network development typically receive reciprocal support that accelerates their own success.</p>
+<p>Technology comfort and willingness to learn new systems help participants take full advantage of OnChain Commerce capabilities, though extensive technical knowledge is not required. Participants who embrace digital tools and automated systems typically achieve better operational efficiency and customer communication than those who resist technological adoption.</p>
+<p>Market understanding and customer focus enable participants to optimize their OnChain Commerce strategies for their specific industries and customer bases. Participants who understand their customers’ needs and preferences can design token reward programs and service offerings that maximize customer satisfaction and retention within network systems.</p>
+<p>The ideal OnChain Commerce participant combines business acumen with collaborative mindset, customer service excellence with long-term thinking, and operational competence with willingness to embrace new approaches to value creation and customer relationships. As we will explore in Chapter 7, these individual success factors scale up to enable regional and global network development that creates sustainable economic opportunities for entire communities and market sectors.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025 Global Business Chain, Inc. <br> <a href="en/">English</a> | <a href="zh/">中文</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

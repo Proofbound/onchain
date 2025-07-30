@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Crypto Business Solution</title>
+<title>ch06-ideal-onchain-commerce-participants.zh – The Crypto Business Solution</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="_resources/css/custom.css">
+<link rel="stylesheet" href="../_resources/css/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">The Crypto Business Solution</span>
     </a>
   </div>
@@ -90,11 +90,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./en/"> 
+    <a class="nav-link" href="../en/"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./zh/"> 
+    <a class="nav-link" href="../zh/"> 
 <span class="menu-text">中文</span></a>
   </li>  
 </ul>
@@ -113,9 +113,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-crypto-business-solution-链上商业解决方案" id="toc-the-crypto-business-solution-链上商业解决方案" class="nav-link active" data-scroll-target="#the-crypto-business-solution-链上商业解决方案">The Crypto Business Solution / 链上商业解决方案</a>
+  <li><a href="#sec-ideal-participants" id="toc-sec-ideal-participants" class="nav-link active" data-scroll-target="#sec-ideal-participants">第六章：理想的链上商业参与者</a>
   <ul class="collapse">
-  <li><a href="#choose-your-language-选择语言" id="toc-choose-your-language-选择语言" class="nav-link" data-scroll-target="#choose-your-language-选择语言">Choose Your Language / 选择语言</a></li>
+  <li><a href="#独立企业家建立个人品牌资产" id="toc-独立企业家建立个人品牌资产" class="nav-link" data-scroll-target="#独立企业家建立个人品牌资产">独立企业家：建立个人品牌资产</a></li>
+  <li><a href="#中小品牌商家摆脱平台剥削" id="toc-中小品牌商家摆脱平台剥削" class="nav-link" data-scroll-target="#中小品牌商家摆脱平台剥削">中小品牌商家：摆脱平台剥削</a></li>
+  <li><a href="#内容创作者和影响者直接将影响力货币化" id="toc-内容创作者和影响者直接将影响力货币化" class="nav-link" data-scroll-target="#内容创作者和影响者直接将影响力货币化">内容创作者和影响者：直接将影响力货币化</a></li>
+  <li><a href="#电子商务摆脱中介费用" id="toc-电子商务摆脱中介费用" class="nav-link" data-scroll-target="#电子商务摆脱中介费用">电子商务：摆脱中介费用</a></li>
+  <li><a href="#成功故事真实参与者案例研究" id="toc-成功故事真实参与者案例研究" class="nav-link" data-scroll-target="#成功故事真实参与者案例研究">成功故事：真实参与者案例研究</a></li>
+  <li><a href="#成功的参与者特征" id="toc-成功的参与者特征" class="nav-link" data-scroll-target="#成功的参与者特征">成功的参与者特征</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -126,33 +131,67 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="the-crypto-business-solution-链上商业解决方案" class="level1">
-<h1>The Crypto Business Solution / 链上商业解决方案</h1>
-<p>Welcome to the bilingual edition of “The Crypto Business Solution” by Jason Apollo Lu.</p>
-<p>欢迎阅读 Jason Apollo Lu 著《链上商业解决方案》双语版本。</p>
-<section id="choose-your-language-选择语言" class="level2">
-<h2 class="anchored" data-anchor-id="choose-your-language-选择语言">Choose Your Language / 选择语言</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<section id="english-version" class="level3">
-<h3 class="anchored" data-anchor-id="english-version"><a href="en/">English Version →</a></h3>
-<p><strong>OnChain Commerce: The Third Commercial Revolution</strong></p>
-<p>In the past commercial world, “making money” equaled “making profit.” But in the era of OnChain Commerce, “making money” equals “making circulation.”</p>
-<p>This book reveals how blockchain technology and decentralized business logic create a new commercial civilization centered on value sharing, disintermediation, and trust reconstruction.</p>
-<p><a href="en/">Read in English →</a></p>
+<section id="sec-ideal-participants" class="level1">
+<h1>第六章：理想的链上商业参与者</h1>
+<p>谁从去中心化商业中受益最多</p>
+<p>链上商业系统为广泛的参与者创造了机会，但某些类型的个人和企业在独特的位置上最大化这些网络提供的好处。了解谁在链上商业环境中蓬勃发展，既帮助潜在参与者评估其适合度，也帮助现有参与者优化其在去中心化商业网络中成功的策略。</p>
+<p>最成功的链上商业参与者通常共享某些与前面章节讨论的基本原则和运营机制一致的特征。他们理解流通胜过储存的价值，欣赏去中心化系统胜过平台依赖的好处，并拥有对网络增长和可持续性做出有意义贡献所必需的技能或资源。</p>
+<p>然而，在链上商业中的成功不需要广泛的技术知识、大量资本投资或以前的加密货币经验。这些系统被设计为在广泛的技术复杂性和商业经验范围内容纳参与者。最重要的是与协作、价值创造导向的原则保持一致，这些原则将链上商业与传统竞争商业模式区别开来。</p>
+<section id="独立企业家建立个人品牌资产" class="level2">
+<h2 class="anchored" data-anchor-id="独立企业家建立个人品牌资产">独立企业家：建立个人品牌资产</h2>
+<p>独立企业家代表链上商业参与最自然的契合之一，因为这些系统放大了独立运营商已经拥有的优势，同时消除了传统上约束小企业成功的许多劣势。独立企业家通常在客户服务、创新和适应性方面表现出色，但在营销触达、客户获取成本和与拥有大量广告预算的大型企业竞争方面面临困难。</p>
+<p>链上商业通过提供基于代币奖励的内置客户获取机制来解决这些传统小企业挑战，这种机制激励客户发现和保留。独立企业家不再主要基于广告支出或品牌认知度竞争，而是可以基于他们为客户提供的价值进行竞争，知道满意的客户将通过代币奖励系统获得财务激励返回并推荐他人。</p>
+<p>链上商业网络内的个人品牌发展机会经常超过独立企业家通过传统营销渠道能够实现的。当客户从其购买中收到代币时，他们与特定商家发展持续的财务关系，而不是通用交易。这创造了比传统广告能够实现的更强的客户忠诚度和口碑营销，同时成本低于传统客户获取计划。</p>
+<p>独立企业家还从链上商业网络的协作而非竞争性质中受益。网络参与者不将其他企业视为威胁，而是有激励支持彼此的成功，因为网络增长通过增加代币实用性和升值使所有参与者受益。这种协作环境经常导致推荐关系、资源共享和联合营销努力，这在传统竞争环境中很难建立。</p>
+<p>链上商业系统的灵活性允许独立企业家在访问网络好处的同时保持其运营独立性。与强加标准化运营要求的特许经营系统或控制客户关系的平台系统不同，链上商业使独立运营商能够使其业务适应当地市场条件，同时保持对网络基础设施和好处的访问。</p>
+<p>财务独立代表独立企业家在链上商业系统中的另一个重要优势。企业家不依赖银行贷款、投资者资金或平台政策，而是可以通过客户资助的增长建立可持续的业务。代币奖励和利润分享机制从早期阶段创造现金流正的运营，减少了经常约束传统小企业发展的财务风险和外部依赖。</p>
+<p>链上商业系统提供的数据所有权和客户关系控制也特别使传统上与拥有复杂客户数据系统的大型竞争对手斗争的独立企业家受益。当客户控制自己的数据并选择直接与受信任的商家分享时，独立企业家可以建立详细的客户洞察，而无需昂贵的客户关系管理系统或数据分析平台。</p>
 </section>
-</div><div class="column" style="width:50%;">
-<section id="中文版本" class="level3">
-<h3 class="anchored" data-anchor-id="中文版本"><a href="zh/">中文版本 →</a></h3>
-<p><strong>链上商业：第三次商业革命</strong></p>
-<p>在过去的商业世界里，“赚钱”等于”赚利润”。但是在链上商业时代，“赚钱”等于”赚流通”。</p>
-<p>本书揭示了区块链技术和去中心化商业逻辑如何创造一个以价值共享、去中介化和信任重构为中心的新商业文明。</p>
-<p><a href="zh/">阅读中文版 →</a></p>
+<section id="中小品牌商家摆脱平台剥削" class="level2">
+<h2 class="anchored" data-anchor-id="中小品牌商家摆脱平台剥削">中小品牌商家：摆脱平台剥削</h2>
+<p>已经取得一些市场成功但发现自己越来越受到平台依赖约束的中小品牌商家代表链上商业参与者的另一个理想类别。这些企业通常拥有既定的客户群、经过验证的商业模式和运营专业知识，但面临来自平台费用、政策变化和传统电子商务和社交媒体平台上有机覆盖减少的日益增长的压力。</p>
+<p>链上商业提供的平台逃脱对这些商家来说可能是变革性的。他们不再向平台支付越来越高的收入百分比来获得客户访问，而是可以将这些相同资源投资于建立直接客户关系和忠诚度的代币奖励。与依赖平台的策略相比，这通常导致更低的客户获取成本和更高的客户生命周期价值。</p>
+<p>品牌商家以现有客户关系、既定运营系统和经过验证的产品或服务提供的形式为链上商业网络带来有价值的资产。这些资产可以加速网络发展并提供使其他网络参与者受益的稳定性。作为回报，这些商家获得访问基于代币的客户获取系统，可以将其覆盖扩展到现有客户群之外。</p>
+<p>链上商业的库存和现金流管理好处对经常与传统零售和电子商务运营的营运资本要求斗争的中型商家来说特别有价值。基于代币的系统可以通过更可预测的客户需求和改善的客户保留率来改善现金流时机并减少库存风险。</p>
+<p>中型商家还经常具有利用链上商业网络提供的跨商家协作机会的运营能力。他们可以参与区域营销活动，与互补企业协调，并以使其自身业务受益同时支持整体网络增长的方式为网络基础设施发展做出贡献。</p>
+<p>链上商业的品牌保护优势对已经在品牌发展中投资巨大但缺乏大公司保护其市场地位资源的中型商家来说可能至关重要。基于代币的客户忠诚度创造比传统营销能实现的更强的品牌依恋，而链上商业的去中心化性质减少了对平台政策变化或通过平台操纵的竞争攻击的脆弱性。</p>
 </section>
-</div>
-</div>
-<hr>
-<p><em>Available in both English and Chinese / 提供英文和中文双语版本</em></p>
+<section id="内容创作者和影响者直接将影响力货币化" class="level2">
+<h2 class="anchored" data-anchor-id="内容创作者和影响者直接将影响力货币化">内容创作者和影响者：直接将影响力货币化</h2>
+<p>已经建立了受众但与平台货币化限制斗争的内容创作者和影响者发现，链上商业为传统赞助和广告收入模式提供了更直接和有利可图的替代方案。创作者不依赖平台算法、广告费率和赞助商可用性，而是可以通过链上商业网络内的直接商家合作伙伴关系和客户推荐将其影响力货币化。</p>
+<p>基于代币的奖励系统使创作者能够为其受众提供真正价值，而不是简单地为佣金支付推广产品。当创作者将其受众推荐给链上商业商家时，受众从其购买中获得代币奖励，而创作者获得推荐补偿。这种利益一致性创造了比传统影响者赞助通常实现的更真实和有效的营销关系。</p>
+<p>内容创作者还从链上商业提供的数据所有权和受众关系控制中受益。创作者不在拥有所有客户数据和关系的平台上建立受众，而是可以通过基于代币的互动和沟通与其受众发展直接联系。这减少了平台依赖，同时与受众创造更可持续的长期关系。</p>
+<p>链上商业网络内的协作机会使内容创作者能够与多个商家发展持续的合作伙伴关系，而不是依赖单一赞助交易或平台收入分享。这些多元化的收入流通常证明比传统内容货币化方法更稳定和有利可图，同时需要更少的时间和精力来维持。</p>
+<p>通过链上商业网络的地理扩张机会还可以通过使创作者能够在网络商家运营的新市场中将其影响力货币化来使他们受益。创作者不限于当地赞助机会或特定平台的受众，而是可以在相同网络基础设施内跨多个区域和商业部门发展收入流。</p>
+<p>链上商业推荐的真实性优势通常比传统广告合作伙伴关系改善内容创作者有效性和受众满意度。当创作者可以通过代币奖励提供真正价值而不是简单地为佣金推广产品时，其受众通常响应更积极，并保持更高的信任和参与水平。</p>
+</section>
+<section id="电子商务摆脱中介费用" class="level2">
+<h2 class="anchored" data-anchor-id="电子商务摆脱中介费用">电子商务：摆脱中介费用</h2>
+<p>在传统平台上已经成功但面临日益增加的费用结构、政策限制和算法依赖的现有电子商务商家代表特别有动机的潜在链上商业参与者类别。这些商家了解数字商业运营和客户获取，但需要日益昂贵和限制性平台关系的替代方案。</p>
+<p>从平台依赖过渡到链上商业的经济好处对这些商家来说可能是巨大的。通常占总销售额15%到40%的平台费用可以改为重定向到建立直接客户关系的代币奖励。这通常导致改善的利润率，同时通过代币奖励为客户提供更好的价值。</p>
+<p>有平台经验的商家还为链上商业网络带来有价值的技能和知识。他们对数字营销、客户服务、库存管理和在线运营的理解可以加速他们在去中心化系统中的成功，同时为经验较少的网络参与者提供指导和支持。</p>
+<p>链上商业提供的客户数据和关系控制对在平台上建立业务但缺乏对其客户信息直接访问的商家来说特别有价值。直接与客户沟通、建立电子邮件列表和发展重复业务关系的能力代表了相对于依赖平台运营的重要竞争优势。</p>
+<p>现有电子商务系统和链上商业网络之间的运营整合对已经理解数字支付处理、库存管理和客户服务系统的有经验商家来说通常证明是直接的。这减少了实施障碍，同时使从平台依赖到网络独立的逐步过渡成为可能。</p>
+<p>多元化收入流提供的风险缓解对经历过损害其业务的平台政策变化、账户暂停或算法修改的商家来说可能至关重要。链上商业提供减少对任何单一平台或系统依赖的替代收入渠道。</p>
+</section>
+<section id="成功故事真实参与者案例研究" class="level2">
+<h2 class="anchored" data-anchor-id="成功故事真实参与者案例研究">成功故事：真实参与者案例研究</h2>
+<p>链上商业的理论好处通过检查跨不同业务类型和实施策略的实际参与者经验变得具体。虽然链上商业代表数字业务的相对新方法，但早期实施已经产生了展示不同类型参与者实际结果的记录案例研究。</p>
+<p>区域餐厅网络提供了链上商业如何转变传统本地业务的引人注目例子。参与餐厅通常报告客户保留率比传统忠诚度计划实现的高20%到50%，平均客户支出增长从15%到30%不等。代币奖励为重复访问创造更强的激励，而跨餐厅合作伙伴关系使客户能够在其区域内跨多个餐饮选择使用代币。</p>
+<p>独立零售商家经常通过链上商业参与实现特别显著的结果。案例研究记录了与传统广告方法相比客户获取成本降低40%到60%，客户生命周期价值增长经常超过100%。降低的获取成本和改善的保留相结合，为参与零售商创造了大幅改善的单位经济学。</p>
+<p>专业服务提供商，如顾问、律师、会计师和医疗从业者，发现基于代币的推荐系统比传统营销方法产生更合格的潜在客户，同时创造更强的客户关系。推荐的财务激励通常产生比传统口碑营销实现的高3到5倍的推荐率。</p>
+<p>从依赖平台的货币化过渡到链上商业合作伙伴关系的内容创作者在参与的第一年内经常报告收入增长50%到200%。推荐佣金、受众代币奖励和减少的平台依赖的结合创造了比传统赞助或广告收入模式提供的更稳定和有利可图的收入流。</p>
+<p>专门从事链上商业实施的技术服务提供商和顾问经常实现卓越结果，因为他们理解网络发展的技术和商业方面。这些参与者通常通过实施服务、持续网络参与和早期网络参与的代币升值发展多个收入流。</p>
+</section>
+<section id="成功的参与者特征" class="level2">
+<h2 class="anchored" data-anchor-id="成功的参与者特征">成功的参与者特征</h2>
+<p>成功的链上商业参与者通常共享某些特征和方法，将他们与不太成功的参与者区别开来。理解这些成功因素可以帮助潜在参与者评估其适合度，并制定最大化其网络参与好处的策略。</p>
+<p>客户服务导向代表最重要的成功因素之一，因为链上商业系统通过基于代币的反馈机制和推荐系统放大客户满意度的重要性。始终提供积极客户体验的商家通常比主要专注于交易完成的商家实现更高的代币分配、更好的客户保留和更多的推荐活动。</p>
+<p>长期思考和承诺使参与者能够最大化链上商业系统提供的网络效应和代币升值好处。将网络参与视为长期业务发展而不是短期收入生成的参与者通常通过复合增长和关系建设实现更好的结果。</p>
+<p>协作心态和支持其他网络参与者的意愿经常证明对成功至关重要，因为链上商业网络在相互支持和共享增长而不是零和竞争上蓬勃发展。积极向其他网络商家推荐客户、分享知识和资源并为网络发展做出贡献的参与者通常收到加速其自身成功的互惠支持。</p>
+<p>技术舒适度和学习新系统的意愿帮助参与者充分利用链上商业能力，尽管不需要广泛的技术知识。拥抱数字工具和自动化系统的参与者通常比抵制技术采用的参与者实现更好的运营效率和客户沟通。</p>
+<p>市场理解和客户焦点使参与者能够为其特定行业和客户群优化其链上商业策略。理解其客户需求和偏好的参与者可以设计代币奖励计划和服务提供，最大化网络系统内的客户满意度和保留。</p>
+<p>理想的链上商业参与者结合商业敏锐度与协作心态、客户服务卓越与长期思考，以及运营能力与拥抱价值创造和客户关系新方法的意愿。正如我们将在第七章中探讨的，这些个人成功因素扩大到使区域和全球网络发展成为可能，为整个社区和市场部门创造可持续的经济机会。</p>
 
 
 </section>
