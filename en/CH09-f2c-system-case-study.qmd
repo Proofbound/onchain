@@ -8,6 +8,8 @@ Understanding the F2C system through detailed case study analysis provides concr
 
 The F2C implementation serves as a reference model for other OnChain Commerce developments while continuing to evolve through participant feedback and technological advancement. Its multi-year operational history provides sufficient data to evaluate both short-term effectiveness and long-term sustainability of OnChain Commerce approaches to business organization and value distribution.
 
+![The F2C System](/assets/images/Ch9-F2C-System.jpg)
+
 ## System Architecture: Technical and Economic Design
 
 The F2C system architecture integrates blockchain technology, smart contract automation, and traditional business processes to create seamless operation between decentralized token systems and conventional commercial activities. The technical infrastructure supports thousands of concurrent transactions while maintaining the transparency and security requirements that enable participant trust and regulatory compliance.
@@ -41,6 +43,8 @@ Infrastructure and development allocation claims eighteen percent of distributio
 The mathematical precision of these distribution formulas eliminates disputes and misunderstandings that often characterize traditional revenue-sharing arrangements. All participants can verify their compensation through blockchain transaction records while understanding exactly how their rewards are calculated based on their specific contributions and network activity levels.
 
 Dynamic adjustment mechanisms enable distribution formulas to evolve over time through democratic governance processes while maintaining mathematical consistency and participant protection. Network participants can propose and vote on distribution formula modifications that respond to changing market conditions or network development priorities without compromising the fundamental fairness and transparency principles that define F2C operations.
+
+![An Overview of F2C Wallet](/assets/images/Ch9-F2C-USDC-Wallet.jpg)
 
 ## Multi-Level Benefits: How Different Participants Profit
 
