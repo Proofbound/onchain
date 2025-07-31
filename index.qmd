@@ -1,5 +1,5 @@
 ---
-title: "The Crypto Business Solution – Select Language"
+title: "Global Business Chain – Select Language"
 format: html
 page-layout: full
 ---
@@ -46,7 +46,9 @@ page-layout: full
 
 # 🌐 Choose Your Language / 选择语言 / 選擇語言
 
-**by Apollo Sun (孫波)**
+**by Apollo Sun**
+
+Visit **GlobalBusinessChain.com** for more information.
 
 Click a cover to view the book in your preferred language:
 

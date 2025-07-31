@@ -1,10 +1,10 @@
 project:
   type: website
-  title: "Onchain Commerce Unveiled / 鏈上商業崛起"
+  title: "Global Business Chain / 萬國商鏈"
   output-dir: docs
 
 website:
-  title: "Onchain Commerce Unveiled"
+  title: "Global Business Chain"
   navbar:
     left:
       - text: "English"

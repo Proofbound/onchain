@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>claude – The Crypto Business Solution</title>
+<title>claude – Global Business Chain</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="_resources/css/custom.css">
+<link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">The Crypto Business Solution</span>
+    <span class="navbar-title">Global Business Chain</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,15 +155,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#claude.md" id="toc-claude.md" class="nav-link active" data-scroll-target="#claude.md">CLAUDE.md</a>
   <ul class="collapse">
   <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">Architecture</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">Architecture</a>
+  <ul class="collapse">
+  <li><a href="#main-structure" id="toc-main-structure" class="nav-link" data-scroll-target="#main-structure">Main Structure</a></li>
+  <li><a href="#content-files" id="toc-content-files" class="nav-link" data-scroll-target="#content-files">Content Files</a></li>
+  <li><a href="#asset-management" id="toc-asset-management" class="nav-link" data-scroll-target="#asset-management">Asset Management</a></li>
+  </ul></li>
   <li><a href="#development-commands" id="toc-development-commands" class="nav-link" data-scroll-target="#development-commands">Development Commands</a>
   <ul class="collapse">
-  <li><a href="#building-the-book" id="toc-building-the-book" class="nav-link" data-scroll-target="#building-the-book">Building the Book</a></li>
+  <li><a href="#building-individual-language-versions" id="toc-building-individual-language-versions" class="nav-link" data-scroll-target="#building-individual-language-versions">Building Individual Language Versions</a></li>
+  <li><a href="#building-all-versions" id="toc-building-all-versions" class="nav-link" data-scroll-target="#building-all-versions">Building All Versions</a></li>
+  <li><a href="#main-language-selection-page" id="toc-main-language-selection-page" class="nav-link" data-scroll-target="#main-language-selection-page">Main Language Selection Page</a></li>
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
   </ul></li>
   <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File Structure</a></li>
-  <li><a href="#content-editing" id="toc-content-editing" class="nav-link" data-scroll-target="#content-editing">Content Editing</a></li>
-  <li><a href="#output-configuration" id="toc-output-configuration" class="nav-link" data-scroll-target="#output-configuration">Output Configuration</a></li>
+  <li><a href="#content-editing" id="toc-content-editing" class="nav-link" data-scroll-target="#content-editing">Content Editing</a>
+  <ul class="collapse">
+  <li><a href="#language-specific-content" id="toc-language-specific-content" class="nav-link" data-scroll-target="#language-specific-content">Language-Specific Content</a></li>
+  <li><a href="#image-references" id="toc-image-references" class="nav-link" data-scroll-target="#image-references">Image References</a></li>
+  <li><a href="#supported-features" id="toc-supported-features" class="nav-link" data-scroll-target="#supported-features">Supported Features</a></li>
+  </ul></li>
+  <li><a href="#output-configuration" id="toc-output-configuration" class="nav-link" data-scroll-target="#output-configuration">Output Configuration</a>
+  <ul class="collapse">
+  <li><a href="#html-output" id="toc-html-output" class="nav-link" data-scroll-target="#html-output">HTML Output</a></li>
+  <li><a href="#pdf-output" id="toc-pdf-output" class="nav-link" data-scroll-target="#pdf-output">PDF Output</a></li>
+  <li><a href="#github-pages-deployment" id="toc-github-pages-deployment" class="nav-link" data-scroll-target="#github-pages-deployment">GitHub Pages Deployment</a></li>
+  </ul></li>
+  <li><a href="#important-notes" id="toc-important-notes" class="nav-link" data-scroll-target="#important-notes">Important Notes</a>
+  <ul class="collapse">
+  <li><a href="#asset-paths" id="toc-asset-paths" class="nav-link" data-scroll-target="#asset-paths">Asset Paths</a></li>
+  <li><a href="#chinese-publishing-conventions" id="toc-chinese-publishing-conventions" class="nav-link" data-scroll-target="#chinese-publishing-conventions">Chinese Publishing Conventions</a></li>
+  <li><a href="#rendering-workflow" id="toc-rendering-workflow" class="nav-link" data-scroll-target="#rendering-workflow">Rendering Workflow</a></li>
+  <li><a href="#multi-language-management" id="toc-multi-language-management" class="nav-link" data-scroll-target="#multi-language-management">Multi-language Management</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -179,71 +203,210 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>This is a Quarto book project titled “The Crypto Business Solution” by Apollo Sun (孫波). The project uses the Quarto publishing system to generate HTML and PDF versions of a book from Markdown source files.</p>
+<p>This is a multi-language Quarto book project with the following titles: - <strong>English</strong>: “Onchain Commerce Unveiled: Engineering the Next Era of Digital Trade” by Apollo Sun - <strong>Simplified Chinese</strong>: “链上商业崛起：第三次商业革命指南” by 孫波 (Apollo Sun) 著 - <strong>Traditional Chinese</strong>: “鏈上商業崛起：第三次商業革命指南” by 孫波 (Apollo Sun) 著</p>
+<p>The project uses the Quarto publishing system to generate HTML and PDF versions of the book from Markdown source files in three languages.</p>
 </section>
 <section id="architecture" class="level2">
 <h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
+<section id="main-structure" class="level3">
+<h3 class="anchored" data-anchor-id="main-structure">Main Structure</h3>
 <ul>
-<li><strong>Configuration</strong>: <code>_quarto.yml</code> defines the project structure, output formats, and book metadata</li>
-<li><strong>Content Files</strong>: <code>.qmd</code> files contain the book chapters (index.qmd, intro.qmd, summary.qmd, references.qmd)</li>
-<li><strong>Template Config</strong>: <code>cc-config.yml</code> contains template variables and metadata</li>
-<li><strong>Bibliography</strong>: <code>references.bib</code> contains bibliographic references</li>
-<li><strong>Output</strong>: <code>docs/</code> directory contains generated HTML files and assets</li>
+<li><strong>Root Configuration</strong>: <code>_quarto.yml</code> defines the main website structure with language selection</li>
+<li><strong>Language Directories</strong>:
+<ul>
+<li><code>en/</code> - English version with its own <code>_quarto.yml</code> and content files</li>
+<li><code>zh/</code> - Simplified Chinese version</li>
+<li><code>zh-tw/</code> - Traditional Chinese version</li>
+</ul></li>
+<li><strong>Assets</strong>: <code>assets/</code> directory contains shared images, CSS, and other resources</li>
+<li><strong>Output</strong>: <code>docs/</code> directory contains generated files for GitHub Pages</li>
 </ul>
+</section>
+<section id="content-files" class="level3">
+<h3 class="anchored" data-anchor-id="content-files">Content Files</h3>
+<ul>
+<li><code>.qmd</code> files contain book chapters and content</li>
+<li>Each language has its own set of chapter files</li>
+<li>Main chapters: CH01 through CH14, plus index, intro, references</li>
+<li>Bibliography: <code>references.bib</code> for citations</li>
+</ul>
+</section>
+<section id="asset-management" class="level3">
+<h3 class="anchored" data-anchor-id="asset-management">Asset Management</h3>
+<ul>
+<li><strong>Images</strong>: Located in <code>assets/images/</code> (e.g., <code>Ch3-6-pillars.jpg</code>, <code>ch2-overview.jpg</code>)</li>
+<li><strong>CSS</strong>: Custom styling in <code>assets/css/custom.css</code></li>
+<li><strong>Cover</strong>: <code>assets/crypto-cover1.jpg</code> used across all language versions</li>
+</ul>
+</section>
 </section>
 <section id="development-commands" class="level2">
 <h2 class="anchored" data-anchor-id="development-commands">Development Commands</h2>
-<section id="building-the-book" class="level3">
-<h3 class="anchored" data-anchor-id="building-the-book">Building the Book</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the entire book to HTML and PDF</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<section id="building-individual-language-versions" class="level3">
+<h3 class="anchored" data-anchor-id="building-individual-language-versions">Building Individual Language Versions</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># English version</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview the book with live reload during development</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simplified Chinese version  </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> zh/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Render only to HTML</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render <span class="at">--to</span> html</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Render only to PDF</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render <span class="at">--to</span> pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Traditional Chinese version</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> zh-tw/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="building-all-versions" class="level3">
+<h3 class="anchored" data-anchor-id="building-all-versions">Building All Versions</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and deploy all language versions</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh-tw/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy to main docs directory</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> en/docs/<span class="pp">*</span> docs/en/</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> zh/docs/<span class="pp">*</span> docs/zh/</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> zh-tw/docs/<span class="pp">*</span> docs/zh-tw/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="main-language-selection-page" class="level3">
+<h3 class="anchored" data-anchor-id="main-language-selection-page">Main Language Selection Page</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the main language selection page</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd <span class="at">--to</span> html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="publishing" class="level3">
 <h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Publish to GitHub Pages (configured for proofbound.github.io/crypto-jason/)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Publish to GitHub Pages (configured for proofbound.github.io/crypto-jason/)</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="file-structure" class="level2">
 <h2 class="anchored" data-anchor-id="file-structure">File Structure</h2>
-<ul>
-<li><code>index.qmd</code> - Book preface/landing page</li>
-<li><code>intro.qmd</code> - Introduction chapter</li>
-<li><code>summary.qmd</code> - Summary chapter<br>
-</li>
-<li><code>references.qmd</code> - References/bibliography page</li>
-<li><code>_quarto.yml</code> - Main Quarto configuration</li>
-<li><code>cc-config.yml</code> - Template configuration variables</li>
-<li><code>references.bib</code> - BibTeX bibliography file</li>
-<li><code>docs/</code> - Generated output directory</li>
-<li><code>*.tex</code> - LaTeX output files (kept due to keep-tex: true setting)</li>
-</ul>
+<pre><code>/
+├── _quarto.yml                 # Main website configuration
+├── index.qmd                   # Language selection page
+├── assets/                     # Shared assets
+│   ├── css/custom.css         # Custom styling
+│   ├── images/                # Book diagrams and illustrations
+│   └── crypto-cover1.jpg      # Book cover image
+├── en/                        # English version
+│   ├── _quarto.yml           # English book configuration
+│   ├── index.qmd             # English preface
+│   ├── intro.qmd             # English introduction
+│   ├── CH01-*.qmd            # English chapters
+│   └── docs/                 # Generated English HTML
+├── zh/                       # Simplified Chinese version
+│   ├── _quarto.yml          # Chinese book configuration
+│   ├── index.qmd            # Chinese preface
+│   ├── intro.qmd            # Chinese introduction
+│   ├── CH01-*.zh.qmd        # Chinese chapters
+│   └── docs/                # Generated Chinese HTML
+├── zh-tw/                   # Traditional Chinese version
+│   ├── _quarto.yml         # Traditional Chinese configuration
+│   ├── index.qmd           # Traditional Chinese preface  
+│   ├── intro.qmd           # Traditional Chinese introduction
+│   ├── CH01-*.zh.qmd       # Traditional Chinese chapters
+│   └── docs/               # Generated Traditional Chinese HTML
+└── docs/                   # Main output for GitHub Pages
+    ├── index.html         # Language selection page
+    ├── en/               # English book files
+    ├── zh/               # Simplified Chinese book files
+    └── zh-tw/            # Traditional Chinese book files</code></pre>
 </section>
 <section id="content-editing" class="level2">
 <h2 class="anchored" data-anchor-id="content-editing">Content Editing</h2>
-<p>Content is written in Quarto Markdown (.qmd files). Each chapter is a separate .qmd file that gets combined into the final book during rendering. The book supports:</p>
+<section id="language-specific-content" class="level3">
+<h3 class="anchored" data-anchor-id="language-specific-content">Language-Specific Content</h3>
+<ul>
+<li>Each language version has its own complete set of <code>.qmd</code> files</li>
+<li>Content should be properly localized, not just translated</li>
+<li>Traditional Chinese uses proper character variants distinct from Simplified Chinese</li>
+<li>Chinese versions follow publishing conventions (author names include 著 character)</li>
+</ul>
+</section>
+<section id="image-references" class="level3">
+<h3 class="anchored" data-anchor-id="image-references">Image References</h3>
+<ul>
+<li>All images should reference <code>/assets/images/</code> paths</li>
+<li><strong>IMPORTANT</strong>: Never use <code>/_resources/</code> paths (GitHub Pages ignores underscore directories)</li>
+<li>Example: <code>![Six Pillars](/assets/images/Ch3-6-pillars.jpg)</code></li>
+</ul>
+</section>
+<section id="supported-features" class="level3">
+<h3 class="anchored" data-anchor-id="supported-features">Supported Features</h3>
 <ul>
 <li>Cross-references between chapters</li>
 <li>Bibliography citations using BibTeX</li>
 <li>PDF and HTML output formats</li>
-<li>CJK font support for international characters</li>
+<li>CJK font support for Chinese characters</li>
 <li>Bootstrap theme (cosmo) for HTML output</li>
+<li>Multi-language navigation and search</li>
 </ul>
+</section>
 </section>
 <section id="output-configuration" class="level2">
 <h2 class="anchored" data-anchor-id="output-configuration">Output Configuration</h2>
-<p>The project is configured to output to both HTML (with cosmo theme) and PDF (using scrbook document class with custom geometry for 6”x9” format). The HTML version includes search functionality and download links for PDF/EPUB formats.</p>
+<section id="html-output" class="level3">
+<h3 class="anchored" data-anchor-id="html-output">HTML Output</h3>
+<ul>
+<li>Uses cosmo Bootstrap theme</li>
+<li>Includes search functionality</li>
+<li>Download links for PDF/EPUB formats</li>
+<li>Responsive design with sidebar navigation</li>
+</ul>
+</section>
+<section id="pdf-output" class="level3">
+<h3 class="anchored" data-anchor-id="pdf-output">PDF Output</h3>
+<ul>
+<li>Uses scrbook document class</li>
+<li>Custom 6”x9” page geometry</li>
+<li>XeLaTeX engine for CJK character support</li>
+<li>Proper font configuration for Chinese text</li>
+</ul>
+</section>
+<section id="github-pages-deployment" class="level3">
+<h3 class="anchored" data-anchor-id="github-pages-deployment">GitHub Pages Deployment</h3>
+<ul>
+<li>Main site serves language selection page</li>
+<li>Each language version deployed to subdirectory (<code>/en/</code>, <code>/zh/</code>, <code>/zh-tw/</code>)</li>
+<li>All assets served from <code>/assets/</code> directory (no underscore prefixes)</li>
+</ul>
+</section>
+</section>
+<section id="important-notes" class="level2">
+<h2 class="anchored" data-anchor-id="important-notes">Important Notes</h2>
+<section id="asset-paths" class="level3">
+<h3 class="anchored" data-anchor-id="asset-paths">Asset Paths</h3>
+<ul>
+<li>Always use <code>assets/</code> not <code>_resources/</code> for asset paths</li>
+<li>GitHub Pages ignores directories starting with underscore</li>
+<li>Images should be referenced as <code>/assets/images/filename.jpg</code></li>
+</ul>
+</section>
+<section id="chinese-publishing-conventions" class="level3">
+<h3 class="anchored" data-anchor-id="chinese-publishing-conventions">Chinese Publishing Conventions</h3>
+<ul>
+<li>Chinese author names must include 著 character: “孫波 (Apollo Sun) 著”</li>
+<li>Use proper Traditional vs Simplified Chinese character variants</li>
+<li>Maintain consistent terminology across Chinese versions</li>
+</ul>
+</section>
+<section id="rendering-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="rendering-workflow">Rendering Workflow</h3>
+<ol type="1">
+<li>Make changes to source <code>.qmd</code> files</li>
+<li>Render each language version independently from its directory</li>
+<li>Copy generated <code>docs/</code> contents to main <code>docs/</code> directory structure</li>
+<li>Commit and push to update GitHub Pages</li>
+</ol>
+</section>
+<section id="multi-language-management" class="level3">
+<h3 class="anchored" data-anchor-id="multi-language-management">Multi-language Management</h3>
+<ul>
+<li>Keep terminology consistent across language versions</li>
+<li>Ensure chapter structures match between languages</li>
+<li>Update all language versions when making structural changes</li>
+<li>Test rendering of all languages before deployment</li>
+</ul>
 
 
+</section>
 </section>
 </section>
 

@@ -1,10 +1,10 @@
 project:
   type: book
-  title: "Onchain Commerce Unveiled: Engineering the Next Era of Digital Trade"
+  title: "Global Business Chain"
   output-dir: docs
 
 book:
-  title: "Onchain Commerce Unveiled: Engineering the Next Era of Digital Trade"
+  title: "Global Business Chain"
   author: "Apollo Sun"
   date: "2025-07-28"
   cover-image: "assets/crypto-cover1.jpg"
