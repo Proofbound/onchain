@@ -29,47 +29,68 @@ The project uses the Quarto publishing system to generate HTML and PDF versions 
 - Bibliography: `references.bib` for citations
 
 ### Asset Management
-- **Images**: Located in `assets/images/` (e.g., `Ch3-6-pillars.jpg`, `ch2-overview.jpg`)
-- **CSS**: Custom styling in `assets/css/custom.css`
-- **Cover**: `assets/crypto-cover1.jpg` used across all language versions
+- **Centralized Assets**: All assets stored in `/assets/` directory organized by type
+  - `/assets/covers/` - Book covers with language suffixes (crypto-cover1.jpg, crypto-jason-cover-zh-tw.pdf)
+  - `/assets/docs/` - Documentation files (PDFs, instructions)
+  - `/assets/images/` - Diagrams, logos, CSS files (Ch3-6-pillars.jpg, ch2-overview.jpg, Ch9-F2C-System.jpg)
+- **Asset Symlinks**: Each language directory (`en/`, `zh/`, `zh-tw/`) has symlink to `../assets` for PDF rendering
+- **Deployment**: Assets copied to `/docs/assets/` and language-specific `/docs/{lang}/assets/` during build
 
 ## Development Commands
 
-### Building Individual Language Versions
+### Complete Build and Deployment Process
+**IMPORTANT**: Always follow this exact sequence to ensure all assets are properly deployed:
+
 ```bash
-# English version
-cd en/ && quarto render --to html
+# 1. Render main language selection page
+quarto render index.qmd --to html
 
-# Simplified Chinese version  
-cd zh/ && quarto render --to html
+# 2. Render all language versions (HTML + PDF)
+cd en/ && quarto render --to html && quarto render --to pdf
+cd ../zh/ && quarto render --to html && quarto render --to pdf  
+cd ../zh-tw/ && quarto render --to html && quarto render --to pdf
 
-# Traditional Chinese version
-cd zh-tw/ && quarto render --to html
-```
-
-### Building All Versions
-```bash
-# Build and deploy all language versions
-cd en/ && quarto render --to html
-cd ../zh/ && quarto render --to html
-cd ../zh-tw/ && quarto render --to html
-
-# Copy to main docs directory
+# 3. Copy all rendered files to main docs structure
 cp -r en/docs/* docs/en/
 cp -r zh/docs/* docs/zh/
 cp -r zh-tw/docs/* docs/zh-tw/
+
+# 4. Ensure all assets are copied to deployment directories
+cp -r assets/images/* docs/assets/images/
+cp -r assets/images/* docs/en/assets/images/
+cp -r assets/images/* docs/zh/assets/images/
+cp -r assets/images/* docs/zh-tw/assets/images/
+
+# 5. Commit and push to GitHub
+git add -A
+git commit -m "Update all language versions and assets"
+git push
 ```
 
-### Main Language Selection Page
+### Individual Language Rendering
 ```bash
-# Render the main language selection page
-quarto render index.qmd --to html
+# English version (HTML + PDF)
+cd en/ && quarto render --to html && quarto render --to pdf
+
+# Simplified Chinese version (HTML + PDF)
+cd zh/ && quarto render --to html && quarto render --to pdf
+
+# Traditional Chinese version (HTML + PDF)
+cd zh-tw/ && quarto render --to html && quarto render --to pdf
 ```
 
-### Publishing
+### Asset Management Commands
 ```bash
-# Publish to GitHub Pages (configured for proofbound.github.io/crypto-jason/)
-quarto publish gh-pages
+# Verify asset symlinks exist (required for PDF rendering)
+ls -la en/assets zh/assets zh-tw/assets
+
+# Create missing symlinks if needed
+cd en/ && ln -sf ../assets .
+cd ../zh/ && ln -sf ../assets .
+cd ../zh-tw/ && ln -sf ../assets .
+
+# Check deployed assets match source
+diff -r assets/images docs/assets/images
 ```
 
 ## File Structure
@@ -78,33 +99,56 @@ quarto publish gh-pages
 /
 ├── _quarto.yml                 # Main website configuration
 ├── index.qmd                   # Language selection page
-├── assets/                     # Shared assets
-│   ├── css/custom.css         # Custom styling
-│   ├── images/                # Book diagrams and illustrations
-│   └── crypto-cover1.jpg      # Book cover image
+├── assets/                     # Centralized assets (version controlled)
+│   ├── covers/                # Book covers with language suffixes
+│   │   ├── crypto-cover1.jpg
+│   │   ├── crypto-jason-cover-zh-tw.pdf
+│   │   └── crypto-jason-cover-full.pdf
+│   ├── docs/                  # Documentation files
+│   │   ├── OnChainCommercer（初版).pdf
+│   │   └── PAPERBACK_6.000x9.000_204_BW_WHITE_en_US.pdf
+│   └── images/                # Diagrams, logos, CSS
+│       ├── Ch3-6-pillars.jpg
+│       ├── ch2-overview.jpg
+│       ├── Ch9-F2C-System.jpg
+│       ├── Ch9-F2C-USDC-Wallet.jpg
+│       ├── css/custom.css
+│       └── proofbound-logo-*.svg
 ├── en/                        # English version
 │   ├── _quarto.yml           # English book configuration
+│   ├── assets -> ../assets   # Symlink for PDF rendering
 │   ├── index.qmd             # English preface
-│   ├── intro.qmd             # English introduction
 │   ├── CH01-*.qmd            # English chapters
-│   └── docs/                 # Generated English HTML
+│   └── docs/                 # Generated English HTML + PDF
 ├── zh/                       # Simplified Chinese version
 │   ├── _quarto.yml          # Chinese book configuration
+│   ├── assets -> ../assets   # Symlink for PDF rendering
 │   ├── index.qmd            # Chinese preface
-│   ├── intro.qmd            # Chinese introduction
 │   ├── CH01-*.zh.qmd        # Chinese chapters
-│   └── docs/                # Generated Chinese HTML
+│   └── docs/                # Generated Chinese HTML + PDF
 ├── zh-tw/                   # Traditional Chinese version
 │   ├── _quarto.yml         # Traditional Chinese configuration
+│   ├── assets -> ../assets   # Symlink for PDF rendering
 │   ├── index.qmd           # Traditional Chinese preface  
-│   ├── intro.qmd           # Traditional Chinese introduction
 │   ├── CH01-*.zh.qmd       # Traditional Chinese chapters
-│   └── docs/               # Generated Traditional Chinese HTML
+│   └── docs/               # Generated Traditional Chinese HTML + PDF
 └── docs/                   # Main output for GitHub Pages
     ├── index.html         # Language selection page
-    ├── en/               # English book files
-    ├── zh/               # Simplified Chinese book files
-    └── zh-tw/            # Traditional Chinese book files
+    ├── assets/            # Deployed centralized assets
+    │   ├── covers/
+    │   └── images/
+    ├── en/               # English book files + assets copy
+    │   ├── *.html
+    │   ├── Global-Business-Chain.pdf
+    │   └── assets/
+    ├── zh/               # Simplified Chinese book files + assets copy
+    │   ├── *.html
+    │   ├── 萬國商鏈.pdf
+    │   └── assets/
+    └── zh-tw/            # Traditional Chinese book files + assets copy
+        ├── *.html
+        ├── 萬國商鏈.pdf
+        └── assets/
 ```
 
 ## Content Editing
@@ -150,9 +194,10 @@ quarto publish gh-pages
 ## Important Notes
 
 ### Asset Paths
-- Always use `assets/` not `_resources/` for asset paths
-- GitHub Pages ignores directories starting with underscore
-- Images should be referenced as `/assets/images/filename.jpg`
+- Always use `/assets/images/filename.jpg` paths in content files (works for both HTML and PDF)
+- **CRITICAL**: Never use `_resources/` paths (GitHub Pages ignores underscore directories)
+- Cover images use `/assets/covers/filename.jpg` paths
+- CSS references use `/assets/images/css/custom.css` path
 
 ### Chinese Publishing Conventions
 - Chinese author names must include 著 character: "孫波 (Apollo Sun) 著"
@@ -170,3 +215,30 @@ quarto publish gh-pages
 - Ensure chapter structures match between languages
 - Update all language versions when making structural changes
 - Test rendering of all languages before deployment
+
+## Troubleshooting
+
+### Missing Images on GitHub Pages
+**Problem**: Images display locally but not on GitHub Pages
+**Solution**: 
+1. Check if images exist in `/docs/assets/images/` and all `/docs/{lang}/assets/images/` directories
+2. Run asset copying commands from deployment process above
+3. Verify image filenames match exactly (case-sensitive)
+
+### PDF Generation Fails
+**Problem**: XeLaTeX cannot find images during PDF rendering
+**Solution**:
+1. Ensure asset symlinks exist: `ls -la en/assets zh/assets zh-tw/assets`
+2. Create missing symlinks: `cd {lang}/ && ln -sf ../assets .`
+3. Verify images use `/assets/images/` paths in content files
+
+### Build Process Issues
+**Problem**: Some files missing after deployment
+**Solution**: Always follow the complete build process in exact order:
+1. Main page → 2. All language versions → 3. Copy files → 4. Copy assets → 5. Commit
+
+### Asset Management Best Practices
+- **Single Source**: All assets in `/assets/` directory only
+- **Version Control**: Assets directory is tracked by git (not in .gitignore)
+- **Deployment**: Assets must be copied to all deployment directories
+- **Verification**: Always check deployed assets match source before pushing
