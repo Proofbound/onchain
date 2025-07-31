@@ -61,9 +61,11 @@ format:
     standalone: true
     toc-depth: 2  
     keep-tex: true
+    default-image-extension: jpg
     include-in-header:
       - text: |
           \usepackage{xeCJK}
           \setCJKmainfont{STSong}
+          \usepackage{graphicx}
     header-includes:
       - \raggedbottom
