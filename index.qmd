@@ -55,19 +55,19 @@ Click a cover to view the book in your preferred language:
 <div class="language-choice">
 <div>
 <a href="en/">
-<img src="assets/crypto-cover1.jpg" alt="English Cover">
+<img src="assets/covers/crypto-cover1.jpg" alt="English Cover">
 </a>
 <div class="language-caption">🇺🇸 English</div>
 </div>
 <div>
 <a href="zh/">
-<img src="assets/crypto-cover1.jpg" alt="Simplified Chinese Cover">
+<img src="assets/covers/crypto-cover1.jpg" alt="Simplified Chinese Cover">
 </a>
 <div class="language-caption">🇨🇳 简体中文</div>
 </div>
 <div>
 <a href="zh-tw/">
-<img src="assets/crypto-cover1.jpg" alt="Traditional Chinese Cover">
+<img src="assets/covers/crypto-cover1.jpg" alt="Traditional Chinese Cover">
 </a>
 <div class="language-caption">🇹🇼 繁體中文</div>
 </div>

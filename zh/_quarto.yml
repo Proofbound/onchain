@@ -7,7 +7,7 @@ book:
   title: "萬國商鏈"
   author: "Apollo Sun 著"
   date: "2025-07-28"
-  cover-image: "assets/crypto-cover1.jpg"
+  cover-image: "assets/covers/crypto-cover1.jpg"
   search: true
   downloads: [pdf, epub]
   chapters:
