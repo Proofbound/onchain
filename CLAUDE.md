@@ -61,6 +61,13 @@ cp -r assets/images/* docs/en/assets/images/
 cp -r assets/images/* docs/zh/assets/images/
 cp -r assets/images/* docs/zh-tw/assets/images/
 
+# 4b. Copy cover images to language-specific directories
+mkdir -p docs/en/assets/covers docs/zh/assets/covers docs/zh-tw/assets/covers
+cp assets/covers/* docs/assets/covers/
+cp assets/covers/* docs/en/assets/covers/
+cp assets/covers/* docs/zh/assets/covers/
+cp assets/covers/* docs/zh-tw/assets/covers/
+
 # 5. Commit and push to GitHub
 git add -A
 git commit -m "Update all language versions and assets"
@@ -241,4 +248,13 @@ diff -r assets/images docs/assets/images
 - **Single Source**: All assets in `/assets/` directory only
 - **Version Control**: Assets directory is tracked by git (not in .gitignore)
 - **Deployment**: Assets must be copied to all deployment directories
+- **Cover Images**: Must be copied to each language's assets/covers/ directory for proper relative path resolution
 - **Verification**: Always check deployed assets match source before pushing
+
+### Cover Image Deployment Issue
+**Problem**: Cover images not displaying on GitHub Pages in language subdirectories
+**Root Cause**: Quarto renders relative paths like `./assets/covers/crypto-cover1.jpg` which fail in subdirectories
+**Solution**: 
+1. Update `cover-image` paths in all `_quarto.yml` files to use absolute paths: `/assets/covers/filename.jpg`
+2. Copy cover images to each language's deployment directory: `docs/{lang}/assets/covers/`
+3. Re-render all language versions to generate correct HTML paths
