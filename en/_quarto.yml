@@ -6,7 +6,7 @@ project:
 book:
   title: "Global Business Chain"
   author: "Apollo Sun"
-  date: "2025-07-28"
+  date: "2025-08-01"
   cover-image: "/assets/covers/crypto-cover1.jpg"
   search: true
   downloads: [pdf, epub]

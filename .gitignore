@@ -1,3 +1,4 @@
 # Template system internals
 .templates/
 /.quarto/
+/published

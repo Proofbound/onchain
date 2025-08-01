@@ -5,8 +5,8 @@ project:
 
 book:
   title: "萬國商鏈"
-  author: "Apollo Sun 著"
-  date: "2025-07-28"
+  author: "讓別人去猜"
+  date: "2025-08-01"
   cover-image: "/assets/covers/crypto-cover1.jpg"
   search: true
   downloads: [pdf, epub]
