@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; 第十一章：建设您的链上业务 – 萬國商鏈</title>
+<title>ch11-building-onchain-business.zh – Global Business Chain</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,54 +20,32 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./CH12-economic-paradigm-shift.zh.html" rel="next">
-<link href="./CH10-industry-specific-applications.zh.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -91,348 +69,138 @@ div.csl-indent {
 }</script>
 
 
+<link rel="stylesheet" href="../assets/images/css/custom.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CH09-f2c-system-case-study.zh.html">第四部分：現實世界應用</a></li><li class="breadcrumb-item"><a href="./CH11-building-onchain-business.zh.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">第十一章：建设您的链上业务</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Global Business Chain</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../en/"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../zh/"> 
+<span class="menu-text">简体中文</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../zh-tw/"> 
+<span class="menu-text">繁體中文</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">萬國商鏈</a> 
-        <div class="sidebar-tools-main">
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./萬國商鏈.pdf">
-              <i class="bi bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./萬國商鏈.epub">
-              <i class="bi bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">前言</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">第一部分：基礎革命</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH01-earning-money-to-earning-circulation.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">從賺錢到賺流通</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH02-web3-commercial-disruption.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">第二章：Web3的商业颠覆</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH03-six-pillars-onchain-commerce.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">鏈上商業的六大支柱</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">第二部分：轉型機制</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH04-spend-more-earn-more-system.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">第四章：“花得越多，赚得越多”运营系统</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH05-beyond-mlm-ecommerce-franchising.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">第五章：超越传销、电商和特许经营</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH06-ideal-onchain-commerce-participants.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">第六章：理想的链上商业参与者</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">第三部分：全球實施策略</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH07-global-expansion-networks.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">第七章：通过去中心化网络实现全球扩张</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH08-individual-economy-revolution.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">第八章：个体经济革命</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">第四部分：現實世界應用</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH09-f2c-system-case-study.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">第九章：F2C系统案例研究</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH10-industry-specific-applications.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">第十章：特定行业应用</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH11-building-onchain-business.zh.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">第十一章：建设您的链上业务</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">第五部分：商業未來</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH12-economic-paradigm-shift.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">第十二章：经济范式转变</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH13-challenges-and-solutions.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">第十三章：挑战与解决方案</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CH14-the-path-forward.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">第十四章：前进之路</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.zh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">参考文献</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#入门个人和企业的第一步" id="toc-入门个人和企业的第一步" class="nav-link active" data-scroll-target="#入门个人和企业的第一步"><span class="header-section-number">11.1</span> 入门：个人和企业的第一步</a></li>
-  <li><a href="#技术要求最小技术进入障碍" id="toc-技术要求最小技术进入障碍" class="nav-link" data-scroll-target="#技术要求最小技术进入障碍"><span class="header-section-number">11.2</span> 技术要求：最小技术进入障碍</a></li>
-  <li><a href="#社区建设增长您的参与者网络" id="toc-社区建设增长您的参与者网络" class="nav-link" data-scroll-target="#社区建设增长您的参与者网络"><span class="header-section-number">11.3</span> 社区建设：增长您的参与者网络</a></li>
-  <li><a href="#收入优化在系统内最大化回报" id="toc-收入优化在系统内最大化回报" class="nav-link" data-scroll-target="#收入优化在系统内最大化回报"><span class="header-section-number">11.4</span> 收入优化：在系统内最大化回报</a></li>
-  <li><a href="#扩展策略从本地到区域到全球运营" id="toc-扩展策略从本地到区域到全球运营" class="nav-link" data-scroll-target="#扩展策略从本地到区域到全球运营"><span class="header-section-number">11.5</span> 扩展策略：从本地到区域到全球运营</a></li>
+  <li><a href="#sec-building-business" id="toc-sec-building-business" class="nav-link active" data-scroll-target="#sec-building-business">建设您的链上业务</a>
+  <ul class="collapse">
+  <li><a href="#入门個人和企业的第一步" id="toc-入门個人和企业的第一步" class="nav-link" data-scroll-target="#入门個人和企业的第一步">入门：個人和企业的第一步</a></li>
+  <li><a href="#技術要求最小技術进入障碍" id="toc-技術要求最小技術进入障碍" class="nav-link" data-scroll-target="#技術要求最小技術进入障碍">技術要求：最小技術进入障碍</a></li>
+  <li><a href="#社区建设增长您的參與者網路" id="toc-社区建设增长您的參與者網路" class="nav-link" data-scroll-target="#社区建设增长您的參與者網路">社区建设：增长您的參與者網路</a></li>
+  <li><a href="#收入优化在系統内最大化回报" id="toc-收入优化在系統内最大化回报" class="nav-link" data-scroll-target="#收入优化在系統内最大化回报">收入优化：在系統内最大化回报</a></li>
+  <li><a href="#扩展策略从本地到区域到全球運營" id="toc-扩展策略从本地到区域到全球運營" class="nav-link" data-scroll-target="#扩展策略从本地到区域到全球運營">扩展策略：从本地到区域到全球運營</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CH09-f2c-system-case-study.zh.html">第四部分：現實世界應用</a></li><li class="breadcrumb-item"><a href="./CH11-building-onchain-business.zh.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">第十一章：建设您的链上业务</span></a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title"><span id="sec-building-business" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">第十一章：建设您的链上业务</span></span></h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<section id="sec-building-business" class="level1">
+<h1>建设您的链上业务</h1>
 <p>实施实用指南</p>
-<p>从理解链上商业原则到在真实商业运营中成功实施它们的转变需要系统性规划、仔细执行，以及基于实际经验和市场反馈的持续优化。虽然本书中讨论的概念和框架提供了理论基础，但成功实施取决于解决将这些想法转化为功能性商业系统时出现的具体挑战和机会。</p>
-<p>建设链上业务与传统业务发展显著不同，因为它强调网络效应、协作价值创造和基于代币的激励系统，而不是竞争优势和利润提取。这一根本差异需要新的规划、执行和增长方法，这些方法与去中心化原则保持一致，同时实现实际商业目标。</p>
-<p>实施过程涉及从初始规划和设置通过社区发展、收入优化和扩展策略的多个阶段。理解这些阶段及其具体要求使企业家和企业主能够制定现实的时间表和资源分配计划，同时避免可能破坏链上商业采用和成功的常见实施陷阱。</p>
-<section id="入门个人和企业的第一步" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="入门个人和企业的第一步"><span class="header-section-number">11.1</span> 入门：个人和企业的第一步</h2>
-<p>链上业务发展的初始阶段专注于教育、规划和基本系统设置，这些建立了可持续网络参与的基础。无论是作为个人参与者开始还是在现有业务内实施链上商业，基本步骤保持一致，而具体细节根据业务类型、市场条件和可用资源而变化。</p>
-<p>教育准备代表最重要的第一步，因为成功的链上商业参与需要理解技术机制和协作原则，这些使这些系统与传统商业模式区别开来。潜在参与者应该在承诺资源实施之前彻底理解代币分配机制、治理过程、社区建设策略和法律合规要求。</p>
-<p>市场研究和竞争分析帮助识别特定行业和地理区域内链上商业实施的最有前途的机会。这项研究应该检查现有商家密度、客户人口统计、监管环境和可能影响网络发展和参与者成功的竞争动态。</p>
-<p>商业模式适应涉及修改现有商业实践以适应基于代币的奖励系统、协作营销方法和以社区为重点的客户关系管理。这经常需要对定价策略、客户服务程序和会计系统的更改，这些可以逐步实施以最小化运营破坏。</p>
-<p>法律和监管合规准备确保链上商业实施符合适用的法律和法规，这些法律和法规管理业务运营、代币分配、客户数据保护和财务记录保存。这种准备经常需要与理解基于区块链的商业系统的合格法律和会计专业人士咨询。</p>
-<p>技术评估和选择专注于选择适当的平台、工具和服务提供商，这些可以支持链上商业运营，而无需广泛的技术专业知识或基础设施投资。大多数成功的实施利用既定的平台和服务提供商，而不是试图开发定制技术解决方案。</p>
-<p>财务规划和资源分配建立现实的预算和链上商业实施时间表，同时识别支持可持续业务发展的资金来源和收入预测。这种规划应该考虑初始设置成本和持续运营费用，同时预测现实的收入增长时间表。</p>
-<p>合作伙伴关系发展和网络识别帮助建立与其他潜在参与者、服务提供商和支持组织的关系，这些可以加速实施并为网络发展和优化提供持续协助。这些关系经常对长期成功和可持续增长证明至关重要。</p>
+<p>从理解链上商業原则到在真实商業運營中成功实施它们的转变需要系統性规划、仔细执行，以及基于实际经验和市场反馈的持续优化。虽然本书中讨论的概念和框架提供了理论基础，但成功实施取决于解决将这些想法转化为功能性商業系統时出现的具体挑战和机会。</p>
+<p>建设链上业务与傳統业务發展显著不同，因为它强调網路效应、协作價值創造和基于代币的激励系統，而不是竞争优势和利润提取。这一根本差异需要新的规划、执行和增长方法，这些方法与去中心化原则保持一致，同时實現实际商業目标。</p>
+<p>实施過程涉及从初始规划和設置通过社区發展、收入优化和扩展策略的多个阶段。理解这些阶段及其具体要求使企业家和企业主能够制定現實的时间表和資源分配计划，同时避免可能破坏链上商業采用和成功的常见实施陷阱。</p>
+<section id="入门個人和企业的第一步" class="level2">
+<h2 class="anchored" data-anchor-id="入门個人和企业的第一步">入门：個人和企业的第一步</h2>
+<p>链上业务發展的初始阶段专注于教育、规划和基本系統設置，这些建立了可持续網路参与的基础。无论是作为個人參與者开始还是在現有业务内实施链上商業，基本步骤保持一致，而具体细节根据业务类型、市场条件和可用資源而變化。</p>
+<p>教育准备代表最重要的第一步，因为成功的链上商業参与需要理解技術机制和协作原则，这些使这些系統与傳統商業模式区别开来。潜在參與者應該在承诺資源实施之前彻底理解代币分配机制、治理過程、社区建设策略和法律合规要求。</p>
+<p>市场研究和竞争分析帮助识别特定行业和地理区域内链上商業实施的最有前途的机会。这项研究應該检查現有商家密度、客户人口统计、监管環境和可能影响網路發展和參與者成功的竞争动态。</p>
+<p>商業模式适应涉及修改現有商業实践以适应基于代币的奖励系統、协作營銷方法和以社区为重点的客户關係管理。这经常需要对定价策略、客户服务程序和会计系統的更改，这些可以逐步实施以最小化運營破坏。</p>
+<p>法律和监管合规准备确保链上商業实施符合适用的法律和法规，这些法律和法规管理业务運營、代币分配、客户数据保护和財務记录保存。这种准备经常需要与理解基于区块链的商業系統的合格法律和会计专业人士咨询。</p>
+<p>技術评估和选择专注于选择适当的平臺、工具和服务提供商，这些可以支持链上商業運營，而无需广泛的技術专业知识或基础设施投资。大多数成功的实施利用既定的平臺和服务提供商，而不是试图开发定制技術解决方案。</p>
+<p>財務规划和資源分配建立現實的预算和链上商業实施时间表，同时识别支持可持续业务發展的资金来源和收入预测。这种规划應該考虑初始設置成本和持续運營费用，同时预测現實的收入增长时间表。</p>
+<p>合作伙伴關係發展和網路识别帮助建立与其他潜在參與者、服务提供商和支持組織的關係，这些可以加速实施并为網路發展和优化提供持续协助。这些關係经常对长期成功和可持续增长证明至关重要。</p>
 </section>
-<section id="技术要求最小技术进入障碍" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="技术要求最小技术进入障碍"><span class="header-section-number">11.2</span> 技术要求：最小技术进入障碍</h2>
-<p>链上商业实施被故意设计为最小化技术障碍和复杂性，这些可能阻止传统企业主和企业家的广泛采用。大多数参与者可以使用现有技术工具和服务平台实施功能性链上商业系统，而无需编程技能或区块链专业知识。</p>
-<p>基本数字基础设施要求包括可靠的互联网连接、标准计算设备和现有商业软件系统，这些可以通过基于网络的界面或简单API连接与链上商业平台集成。大多数企业已经拥有支持链上商业实施的必要技术基础设施。</p>
-<p>平台选择专注于选择既定的链上商业服务提供商，这些提供商处理区块链集成、智能合约管理和代币分配的技术复杂性，同时为业务运营和客户互动提供用户友好的界面。这些平台通常以订阅或交易费模式运营，消除了大额前期技术投资。</p>
-<p>支付系统集成通常涉及通过简单配置程序而不是复杂技术开发，将现有销售点系统、电子商务平台或会计软件与链上商业平台连接。大多数既定的商业系统可以在几小时或几天内集成，而不是几周或几个月。</p>
-<p>客户界面实施通常利用标准网络技术和移动应用程序，客户可以通过熟悉的浏览器和设备访问，而无需安装专门软件或技术知识。客户体验应该感觉类似于传统在线购物或忠诚度计划参与。</p>
-<p>数据管理和备份程序确保业务和客户信息保持安全和可访问，同时符合适用的隐私法规和行业最佳实践。链上商业平台通常提供超过个体企业可以独立实施的自动化备份和安全功能。</p>
-<p>安全和合规监控涉及定期审查系统访问控制、交易监控和保护业务运营和客户信息的监管合规程序。大多数链上商业平台提供自动化监控和警报系统，简化参与企业的安全管理。</p>
-<p>支持和维护资源包括链上商业平台提供商和社区网络提供的技术协助、培训材料和故障排除服务。这些资源使企业能够快速解决技术问题，同时无需内部技术专业知识即可继续有效运营。</p>
+<section id="技術要求最小技術进入障碍" class="level2">
+<h2 class="anchored" data-anchor-id="技術要求最小技術进入障碍">技術要求：最小技術进入障碍</h2>
+<p>链上商業实施被故意設計为最小化技術障碍和复杂性，这些可能阻止傳統企业主和企业家的广泛采用。大多数參與者可以使用現有技術工具和服务平臺实施功能性链上商業系統，而无需编程技能或区块链专业知识。</p>
+<p>基本数字基础设施要求包括可靠的互联网连接、标准计算设备和現有商業软件系統，这些可以通过基于網路的界面或简单API连接与链上商業平臺集成。大多数企业已经拥有支持链上商業实施的必要技術基础设施。</p>
+<p>平臺选择专注于选择既定的链上商業服务提供商，这些提供商處理区块链集成、智能合约管理和代币分配的技術复杂性，同时为业务運營和客户互动提供用户友好的界面。这些平臺通常以订阅或交易费模式運營，消除了大额前期技術投资。</p>
+<p>支付系統集成通常涉及通过简单配置程序而不是复杂技術开发，将現有銷售点系統、电子商务平臺或会计软件与链上商業平臺连接。大多数既定的商業系統可以在几小时或几天内集成，而不是几周或几个月。</p>
+<p>客户界面实施通常利用标准網路技術和移动应用程序，客户可以通过熟悉的浏览器和设备访问，而无需安装专门软件或技術知识。客户体验應該感觉类似于傳統在线购物或忠诚度计划参与。</p>
+<p>数据管理和备份程序确保业务和客户信息保持安全和可访问，同时符合适用的隐私法规和行业最佳实践。链上商業平臺通常提供超过個體企业可以独立实施的自动化备份和安全功能。</p>
+<p>安全和合规监控涉及定期审查系統访问控制、交易监控和保护业务運營和客户信息的监管合规程序。大多数链上商業平臺提供自动化监控和警报系統，简化参与企业的安全管理。</p>
+<p>支持和维护資源包括链上商業平臺提供商和社区網路提供的技術协助、培训材料和故障排除服务。这些資源使企业能够快速解决技術問題，同时无需内部技術专业知识即可继续有效運營。</p>
 </section>
-<section id="社区建设增长您的参与者网络" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="社区建设增长您的参与者网络"><span class="header-section-number">11.3</span> 社区建设：增长您的参与者网络</h2>
-<p>成功的链上商业实施更多依赖于社区发展和关系建设，而不是技术部署或营销活动。建设蓬勃发展的参与者网络需要关系发展、价值创造和协作增长的系统方法，这些与传统客户获取和保留策略显著不同。</p>
-<p>关系优先方法优先考虑真正的价值创造和互利，而不是促销活动和销售策略。成功的链上商业参与者通常专注于帮助网络内的其他人成功，而不是简单地推广自己的产品或服务。这种以关系为重点的方法建立支持长期网络增长和可持续性的信任和忠诚度。</p>
-<p>教育内容创作帮助潜在参与者理解链上商业好处和实施程序，同时在社区内建立思想领导力和专业知识。教育活动可能包括研讨会、网络研讨会、博客文章、视频内容和一对一咨询，这些为潜在参与者提供价值，同时建立关系和网络意识。</p>
-<p>推荐系统优化专注于识别和培养与能够有效向网络介绍新参与者的个人的关系。这些可能包括现有客户、业务合作伙伴、行业同事或理解价值主张并能够有效地向其网络传达的社区领导者。</p>
-<p>交叉推广和协作机会使网络参与者能够通过推荐、联合营销努力和资源共享支持彼此的业务，这些使所有参与者受益，同时加强社区纽带。这些协作活动经常比个人营销努力产生更好的结果，同时建立持久的商业关系。</p>
-<p>活动组织和参与为网络参与者提供见面、分享经验和发展加强社区凝聚力和相互支持的个人关系的机会。活动可能包括本地聚会、行业会议、教育研讨会或建立社区参与和参与者保留的社交聚会。</p>
-<p>质量保证和社区标准通过确保新参与者理解并承诺定义成功链上商业社区的协作原则和客户服务标准来帮助维护网络完整性。这可能涉及审查程序、培训要求或支持新参与者成功的指导计划。</p>
-<p>认可和奖励系统承认和庆祝参与者对社区发展、客户服务卓越和网络增长的贡献。这些认可计划经常激励持续参与和高质量绩效，同时为其他社区成员提供例子和灵感。</p>
-<p>反馈和改进过程使社区成员能够通过建议、批评和协作问题解决为网络发展和优化做出贡献，这些随时间改善网络运营和参与者满意度。</p>
+<section id="社区建设增长您的參與者網路" class="level2">
+<h2 class="anchored" data-anchor-id="社区建设增长您的參與者網路">社区建设：增长您的參與者網路</h2>
+<p>成功的链上商業实施更多依赖于社区發展和關係建设，而不是技術部署或營銷活动。建设蓬勃發展的參與者網路需要關係發展、價值創造和协作增长的系統方法，这些与傳統客户獲取和保留策略显著不同。</p>
+<p>關係优先方法优先考虑真正的價值創造和互利，而不是促销活动和銷售策略。成功的链上商業參與者通常专注于帮助網路内的其他人成功，而不是简单地推广自己的产品或服务。这种以關係为重点的方法建立支持长期網路增长和可持续性的信任和忠诚度。</p>
+<p>教育内容創作帮助潜在參與者理解链上商業好处和实施程序，同时在社区内建立思想领导力和专业知识。教育活动可能包括研讨会、網路研讨会、博客文章、视频内容和一对一咨询，这些为潜在參與者提供價值，同时建立關係和網路意识。</p>
+<p>推荐系統优化专注于识别和培养与能够有效向網路介绍新參與者的個人的關係。这些可能包括現有客户、业务合作伙伴、行业同事或理解價值主张并能够有效地向其網路传达的社区领导者。</p>
+<p>交叉推广和协作机会使網路參與者能够通过推荐、联合營銷努力和資源共享支持彼此的业务，这些使所有參與者受益，同时加强社区纽带。这些协作活动经常比個人營銷努力产生更好的結果，同时建立持久的商業關係。</p>
+<p>活动組織和参与为網路參與者提供见面、分享经验和發展加强社区凝聚力和相互支持的個人關係的机会。活动可能包括本地聚会、行业会议、教育研讨会或建立社区参与和參與者保留的社交聚会。</p>
+<p>质量保证和社区标准通过确保新參與者理解并承诺定义成功链上商業社区的协作原则和客户服务标准来帮助维护網路完整性。这可能涉及审查程序、培训要求或支持新參與者成功的指导计划。</p>
+<p>认可和奖励系統承认和庆祝參與者对社区發展、客户服务卓越和網路增长的贡献。这些认可计划经常激励持续参与和高质量绩效，同时为其他社区成员提供例子和灵感。</p>
+<p>反馈和改进過程使社区成员能够通过建议、批评和协作問題解决为網路發展和优化做出贡献，这些随时间改善網路運營和參與者满意度。</p>
 </section>
-<section id="收入优化在系统内最大化回报" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="收入优化在系统内最大化回报"><span class="header-section-number">11.4</span> 收入优化：在系统内最大化回报</h2>
-<p>链上商业收入优化专注于最大化价值创造和代币积累，而不是简单地增加交易量或利润率。这种方法需要理解不同活动如何产生代币奖励和升值，同时建立支持长期增长和成功的可持续商业关系。</p>
-<p>代币积累策略涉及优化商业运营以通过客户交易、推荐活动、社区参与和网络发展贡献最大化代币获得。这可能包括调整产品组合、定价策略或服务提供，以增加客户满意度和重复业务，同时最大化每笔交易的代币奖励。</p>
-<p>客户生命周期价值增强专注于建立通过重复业务、推荐和社区参与产生持续代币奖励的长期关系，而不是优化单一交易利润。这种方法经常涉及提供卓越的客户服务、持续的价值创造和超越传统商业关系的社区建设活动。</p>
-<p>链上商业系统内的交叉销售和向上销售优化通常涉及帮助客户发现来自其他网络参与者的产品和服务，而不是简单地推广来自个体企业的更高价值产品。这种协作方法经常产生更多总价值，同时建立更强的社区关系。</p>
-<p>推荐收入最大化涉及发展识别和培养推荐机会的系统方法，同时为被推荐参与者提供产生持续推荐活动的持续价值。成功的推荐策略经常涉及教育、关系建设和持续支持，而不是简单的促销活动。</p>
-<p>网络参与奖励可以通过积极参与社区发展、治理活动、内容创作和支持服务进行优化，这些产生代币奖励，同时在网络内建立有价值的关系和专业知识。</p>
-<p>地理扩张策略使企业能够利用链上商业网络以减少的风险和通过网络关系和跨地理边界转移的基于代币的客户激励加速客户获取进入新市场。</p>
-<p>合作伙伴关系发展和协作收入生成为企业创造合作项目、服务或市场发展倡议的机会，这些产生共享收入，同时加强网络关系和扩展业务能力。</p>
-<p>绩效测量和优化涉及跟踪与代币积累、客户满意度、网络参与和业务增长相关的关键指标，以识别链上商业系统内的改进和优化机会。</p>
+<section id="收入优化在系統内最大化回报" class="level2">
+<h2 class="anchored" data-anchor-id="收入优化在系統内最大化回报">收入优化：在系統内最大化回报</h2>
+<p>链上商業收入优化专注于最大化價值創造和代币积累，而不是简单地增加交易量或利润率。这种方法需要理解不同活动如何产生代币奖励和升值，同时建立支持长期增长和成功的可持续商業關係。</p>
+<p>代币积累策略涉及优化商業運營以通过客户交易、推荐活动、社区参与和網路發展贡献最大化代币獲得。这可能包括调整产品组合、定价策略或服务提供，以增加客户满意度和重复业务，同时最大化每笔交易的代币奖励。</p>
+<p>客户生命周期價值增强专注于建立通过重复业务、推荐和社区参与产生持续代币奖励的长期關係，而不是优化單一交易利润。这种方法经常涉及提供卓越的客户服务、持续的價值創造和超越傳統商業關係的社区建设活动。</p>
+<p>链上商業系統内的交叉銷售和向上銷售优化通常涉及帮助客户发现来自其他網路參與者的产品和服务，而不是简单地推广来自個體企业的更高價值产品。这种协作方法经常产生更多总價值，同时建立更强的社区關係。</p>
+<p>推荐收入最大化涉及發展识别和培养推荐机会的系統方法，同时为被推荐參與者提供产生持续推荐活动的持续價值。成功的推荐策略经常涉及教育、關係建设和持续支持，而不是简单的促销活动。</p>
+<p>網路参与奖励可以通过积极参与社区發展、治理活动、内容創作和支持服务进行优化，这些产生代币奖励，同时在網路内建立有價值的關係和专业知识。</p>
+<p>地理扩张策略使企业能够利用链上商業網路以减少的风险和通过網路關係和跨地理边界转移的基于代币的客户激励加速客户獲取进入新市场。</p>
+<p>合作伙伴關係發展和协作收入生成为企业創造合作项目、服务或市场發展倡议的机会，这些产生共享收入，同时加强網路關係和扩展业务能力。</p>
+<p>绩效测量和优化涉及跟踪与代币积累、客户满意度、網路参与和业务增长相关的關鍵指标，以识别链上商業系統内的改进和优化机会。</p>
 </section>
-<section id="扩展策略从本地到区域到全球运营" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="扩展策略从本地到区域到全球运营"><span class="header-section-number">11.5</span> 扩展策略：从本地到区域到全球运营</h2>
-<p>链上商业扩展策略强调通过网络效应和协作发展而不是资本密集型扩张或竞争市场主导的可持续增长。这种方法使企业能够实现显著规模，同时保持支持持续增长和适应的运营灵活性和社区关系。</p>
-<p>本地市场发展通常专注于在特定地理区域内建立参与商家和客户的密集网络，这些可以支持频繁互动和强大社区关系。本地成功经常通过经过验证的系统和既定关系为区域和全球扩张提供基础。</p>
-<p>区域网络协调涉及与其他成功的本地网络合作，发展区域营销活动、资源共享安排和协作服务，这些使所有参与社区受益，同时创造规模经济和增强的客户价值主张。</p>
-<p>多地点扩张策略使成功的本地企业能够在新地理市场中复制其运营，同时保持对既定链上商业网络和关系的访问。这种方法经常减少扩张风险，同时加速客户获取和市场渗透。</p>
-<p>数字平台发展允许成功的链上商业企业通过电子商务、内容创作、咨询服务或可以全球服务客户的数字产品提供将其覆盖扩展到本地市场之外，同时保持本地社区关系。</p>
-<p>特许经营和许可机会使成功的链上商业企业能够与其他市场的企业家分享其系统和专业知识，同时通过特许权使用费、服务费或使所有参与者受益的合作伙伴关系安排产生持续收入。</p>
-<p>与更大组织、机构或网络的战略合作伙伴关系发展可以提供对新市场、客户群和资源的访问，同时保持定义成功链上商业运营的协作原则和社区焦点。</p>
-<p>技术和基础设施扩展涉及升级系统、流程和能力以支持增加的交易量和地理扩张，同时保持支持持续增长和成功的运营效率和客户服务质量。</p>
-<p>治理和管理扩展需要发展可以协调复杂多地点或多市场运营的领导结构、决策过程和运营程序，同时保持使链上商业成功成为可能的民主和协作原则。</p>
-<p>通过系统规划、适当技术选择、社区发展、收入优化和扩展策略的链上商业实际实施为去中心化经济网络内的可持续商业成功提供基础。正如我们将在第十二章中探讨的，这些个体商业成功故事集体贡献于更广泛的经济范式转变，转变商业活动在区域、国家和全球规模上的运作方式。</p>
+<section id="扩展策略从本地到区域到全球運營" class="level2">
+<h2 class="anchored" data-anchor-id="扩展策略从本地到区域到全球運營">扩展策略：从本地到区域到全球運營</h2>
+<p>链上商業扩展策略强调通过網路效应和协作發展而不是資本密集型扩张或竞争市场主导的可持续增长。这种方法使企业能够實現显著規模，同时保持支持持续增长和适应的運營灵活性和社区關係。</p>
+<p>本地市场發展通常专注于在特定地理区域内建立参与商家和客户的密集網路，这些可以支持频繁互动和强大社区關係。本地成功经常通过经过验证的系統和既定關係为区域和全球扩张提供基础。</p>
+<p>区域網路协调涉及与其他成功的本地網路合作，發展区域營銷活动、資源共享安排和协作服务，这些使所有参与社区受益，同时創造規模經濟和增强的客户價值主张。</p>
+<p>多地点扩张策略使成功的本地企业能够在新地理市场中复制其運營，同时保持对既定链上商業網路和關係的访问。这种方法经常减少扩张风险，同时加速客户獲取和市场渗透。</p>
+<p>数字平臺發展允许成功的链上商業企业通过电子商务、内容創作、咨询服务或可以全球服务客户的数字产品提供将其覆盖扩展到本地市场之外，同时保持本地社区關係。</p>
+<p>特许经营和许可机会使成功的链上商業企业能够与其他市场的企业家分享其系統和专业知识，同时通过特许权使用费、服务费或使所有參與者受益的合作伙伴關係安排产生持续收入。</p>
+<p>与更大組織、机构或網路的战略合作伙伴關係發展可以提供对新市场、客户群和資源的访问，同时保持定义成功链上商業運營的协作原则和社区焦点。</p>
+<p>技術和基础设施扩展涉及升级系統、流程和能力以支持增加的交易量和地理扩张，同时保持支持持续增长和成功的運營效率和客户服务质量。</p>
+<p>治理和管理扩展需要發展可以协调复杂多地点或多市场運營的领导结构、决策過程和運營程序，同时保持使链上商業成功成为可能的民主和协作原则。</p>
+<p>通过系統规划、适当技術选择、社区發展、收入优化和扩展策略的链上商業实际实施为去中心化經濟網路内的可持续商業成功提供基础。正如我们将在第十二章中探讨的，这些個體商業成功故事集体贡献于更广泛的經濟范式转变，转变商業活动在区域、国家和全球規模上的運作方式。</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-Buterin2013" class="csl-entry" role="listitem">
-Buterin, Vitalik. 2013. <em>Ethereum White Paper: A Next-Generation Smart Contract and Decentralized Application Platform</em>. <a href="https://ethereum.org/en/whitepaper/">https://ethereum.org/en/whitepaper/</a>.
-</div>
-<div id="ref-Buterin2017" class="csl-entry" role="listitem">
-———. 2017. <span>“On Public Goods in Ethereum.”</span> <em>Vitalik Buterin’s Blog</em>. <a href="https://vitalik.ca/general/2017/08/07/publicgoods.html">https://vitalik.ca/general/2017/08/07/publicgoods.html</a>.
-</div>
-<div id="ref-CoinMarketCap2023" class="csl-entry" role="listitem">
-CoinMarketCap. 2023. <span>“Crypto Economics Report 2023.”</span> CoinMarketCap. <a href="https://coinmarketcap.com/research/reports/">https://coinmarketcap.com/research/reports/</a>.
-</div>
-<div id="ref-DeFilippi2020" class="csl-entry" role="listitem">
-De Filippi, Primavera, and Aaron Wright. 2020. <em>Blockchain and the Law: The Rule of Code</em>. Harvard University Press.
-</div>
-<div id="ref-Nakamoto2008" class="csl-entry" role="listitem">
-Nakamoto, Satoshi. 2008. <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>. <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a>.
-</div>
-<div id="ref-Szabo1997" class="csl-entry" role="listitem">
-Szabo, Nick. 1997. <span>“The Idea of Smart Contracts.”</span> <em>Nick Szabo’s Essays, Papers, and Concise Tutorials</em>. <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html">http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html</a>.
-</div>
-<div id="ref-Tapscott2016" class="csl-entry" role="listitem">
-Tapscott, Don, and Alex Tapscott. 2016. <em>Blockchain Revolution: How the Technology Behind Bitcoin Is Changing Money, Business, and the World</em>. Portfolio Penguin.
-</div>
-<div id="ref-Voshmgir2019" class="csl-entry" role="listitem">
-Voshmgir, Shermin. 2019. <em>Token Economy: How the Web3 Reinvents the Internet</em>. Token Kitchen.
-</div>
-<div id="ref-Wood2014" class="csl-entry" role="listitem">
-Wood, Gavin. 2014. <span>“Ethereum: A Secure Decentralised Generalised Transaction Ledger.”</span> <em>Ethereum Project Yellow Paper</em>. <a href="https://ethereum.github.io/yellowpaper/paper.pdf">https://ethereum.github.io/yellowpaper/paper.pdf</a>.
-</div>
-<div id="ref-WorldBank2021" class="csl-entry" role="listitem">
-World Bank. 2021. <span>“Blockchain and Distributed Ledger Technologies in the Financial Sector.”</span> World Bank Group. <a href="https://www.worldbank.org/en/topic/financialsector/brief/blockchain-and-distributed-ledger-technologies-dlt">https://www.worldbank.org/en/topic/financialsector/brief/blockchain-and-distributed-ledger-technologies-dlt</a>.
-</div>
-</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -835,19 +603,20 @@ World Bank. 2021. <span>“Blockchain and Distributed Ledger Technologies in the
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./CH10-industry-specific-applications.zh.html" class="pagination-link" aria-label="第十章：特定行业应用">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">第十章：特定行业应用</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./CH12-economic-paradigm-shift.zh.html" class="pagination-link" aria-label="第十二章：经济范式转变">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">第十二章：经济范式转变</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025 Global Business Chain, Inc. <br> <a href="en/">English</a> | <a href="zh/">简体中文</a> | <a href="zh-tw/">繁體中文</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

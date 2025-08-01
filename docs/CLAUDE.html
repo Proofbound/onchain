@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/images/css/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -163,10 +163,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#development-commands" id="toc-development-commands" class="nav-link" data-scroll-target="#development-commands">Development Commands</a>
   <ul class="collapse">
-  <li><a href="#building-individual-language-versions" id="toc-building-individual-language-versions" class="nav-link" data-scroll-target="#building-individual-language-versions">Building Individual Language Versions</a></li>
-  <li><a href="#building-all-versions" id="toc-building-all-versions" class="nav-link" data-scroll-target="#building-all-versions">Building All Versions</a></li>
-  <li><a href="#main-language-selection-page" id="toc-main-language-selection-page" class="nav-link" data-scroll-target="#main-language-selection-page">Main Language Selection Page</a></li>
-  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
+  <li><a href="#complete-build-and-deployment-process" id="toc-complete-build-and-deployment-process" class="nav-link" data-scroll-target="#complete-build-and-deployment-process">Complete Build and Deployment Process</a></li>
+  <li><a href="#individual-language-rendering" id="toc-individual-language-rendering" class="nav-link" data-scroll-target="#individual-language-rendering">Individual Language Rendering</a></li>
+  <li><a href="#asset-management-commands" id="toc-asset-management-commands" class="nav-link" data-scroll-target="#asset-management-commands">Asset Management Commands</a></li>
   </ul></li>
   <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File Structure</a></li>
   <li><a href="#content-editing" id="toc-content-editing" class="nav-link" data-scroll-target="#content-editing">Content Editing</a>
@@ -187,6 +186,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#chinese-publishing-conventions" id="toc-chinese-publishing-conventions" class="nav-link" data-scroll-target="#chinese-publishing-conventions">Chinese Publishing Conventions</a></li>
   <li><a href="#rendering-workflow" id="toc-rendering-workflow" class="nav-link" data-scroll-target="#rendering-workflow">Rendering Workflow</a></li>
   <li><a href="#multi-language-management" id="toc-multi-language-management" class="nav-link" data-scroll-target="#multi-language-management">Multi-language Management</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#missing-images-on-github-pages" id="toc-missing-images-on-github-pages" class="nav-link" data-scroll-target="#missing-images-on-github-pages">Missing Images on GitHub Pages</a></li>
+  <li><a href="#pdf-generation-fails" id="toc-pdf-generation-fails" class="nav-link" data-scroll-target="#pdf-generation-fails">PDF Generation Fails</a></li>
+  <li><a href="#build-process-issues" id="toc-build-process-issues" class="nav-link" data-scroll-target="#build-process-issues">Build Process Issues</a></li>
+  <li><a href="#asset-management-best-practices" id="toc-asset-management-best-practices" class="nav-link" data-scroll-target="#asset-management-best-practices">Asset Management Best Practices</a></li>
+  <li><a href="#cover-image-deployment-issue" id="toc-cover-image-deployment-issue" class="nav-link" data-scroll-target="#cover-image-deployment-issue">Cover Image Deployment Issue</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -234,46 +241,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="asset-management" class="level3">
 <h3 class="anchored" data-anchor-id="asset-management">Asset Management</h3>
 <ul>
-<li><strong>Images</strong>: Located in <code>assets/images/</code> (e.g., <code>Ch3-6-pillars.jpg</code>, <code>ch2-overview.jpg</code>)</li>
-<li><strong>CSS</strong>: Custom styling in <code>assets/css/custom.css</code></li>
-<li><strong>Cover</strong>: <code>assets/crypto-cover1.jpg</code> used across all language versions</li>
+<li><strong>Centralized Assets</strong>: All assets stored in <code>/assets/</code> directory organized by type
+<ul>
+<li><code>/assets/covers/</code> - Book covers with language suffixes (crypto-cover1.jpg, crypto-jason-cover-zh-tw.pdf)</li>
+<li><code>/assets/docs/</code> - Documentation files (PDFs, instructions)</li>
+<li><code>/assets/images/</code> - Diagrams, logos, CSS files (Ch3-6-pillars.jpg, ch2-overview.jpg, Ch9-F2C-System.jpg)</li>
+</ul></li>
+<li><strong>Asset Symlinks</strong>: Each language directory (<code>en/</code>, <code>zh/</code>, <code>zh-tw/</code>) has symlink to <code>../assets</code> for PDF rendering</li>
+<li><strong>Deployment</strong>: Assets copied to <code>/docs/assets/</code> and language-specific <code>/docs/{lang}/assets/</code> during build</li>
 </ul>
 </section>
 </section>
 <section id="development-commands" class="level2">
 <h2 class="anchored" data-anchor-id="development-commands">Development Commands</h2>
-<section id="building-individual-language-versions" class="level3">
-<h3 class="anchored" data-anchor-id="building-individual-language-versions">Building Individual Language Versions</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># English version</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
+<section id="complete-build-and-deployment-process" class="level3">
+<h3 class="anchored" data-anchor-id="complete-build-and-deployment-process">Complete Build and Deployment Process</h3>
+<p><strong>IMPORTANT</strong>: Always follow this exact sequence to ensure all assets are properly deployed:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Render main language selection page</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd <span class="at">--to</span> html</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simplified Chinese version  </span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> zh/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Traditional Chinese version</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> zh-tw/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Render all language versions (HTML + PDF)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> pdf</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> pdf  </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh-tw/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> pdf</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Copy all rendered files to main docs structure</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> en/docs/<span class="pp">*</span> docs/en/</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> zh/docs/<span class="pp">*</span> docs/zh/</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> zh-tw/docs/<span class="pp">*</span> docs/zh-tw/</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Ensure all assets are copied to deployment directories</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> assets/images/<span class="pp">*</span> docs/assets/images/</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> assets/images/<span class="pp">*</span> docs/en/assets/images/</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> assets/images/<span class="pp">*</span> docs/zh/assets/images/</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> assets/images/<span class="pp">*</span> docs/zh-tw/assets/images/</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 4b. Copy cover images to language-specific directories</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> docs/en/assets/covers docs/zh/assets/covers docs/zh-tw/assets/covers</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> assets/covers/<span class="pp">*</span> docs/assets/covers/</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> assets/covers/<span class="pp">*</span> docs/en/assets/covers/</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> assets/covers/<span class="pp">*</span> docs/zh/assets/covers/</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> assets/covers/<span class="pp">*</span> docs/zh-tw/assets/covers/</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Commit and push to GitHub</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">-A</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Update all language versions and assets"</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="building-all-versions" class="level3">
-<h3 class="anchored" data-anchor-id="building-all-versions">Building All Versions</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Build and deploy all language versions</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh-tw/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy to main docs directory</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> en/docs/<span class="pp">*</span> docs/en/</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> zh/docs/<span class="pp">*</span> docs/zh/</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> zh-tw/docs/<span class="pp">*</span> docs/zh-tw/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="individual-language-rendering" class="level3">
+<h3 class="anchored" data-anchor-id="individual-language-rendering">Individual Language Rendering</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># English version (HTML + PDF)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> pdf</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simplified Chinese version (HTML + PDF)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> zh/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> pdf</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Traditional Chinese version (HTML + PDF)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> zh-tw/ <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> html <span class="kw">&amp;&amp;</span> <span class="ex">quarto</span> render <span class="at">--to</span> pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="main-language-selection-page" class="level3">
-<h3 class="anchored" data-anchor-id="main-language-selection-page">Main Language Selection Page</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the main language selection page</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd <span class="at">--to</span> html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="publishing" class="level3">
-<h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Publish to GitHub Pages (configured for proofbound.github.io/crypto-jason/)</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="asset-management-commands" class="level3">
+<h3 class="anchored" data-anchor-id="asset-management-commands">Asset Management Commands</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify asset symlinks exist (required for PDF rendering)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-la</span> en/assets zh/assets zh-tw/assets</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create missing symlinks if needed</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> en/ <span class="kw">&amp;&amp;</span> <span class="fu">ln</span> <span class="at">-sf</span> ../assets .</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh/ <span class="kw">&amp;&amp;</span> <span class="fu">ln</span> <span class="at">-sf</span> ../assets .</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../zh-tw/ <span class="kw">&amp;&amp;</span> <span class="fu">ln</span> <span class="at">-sf</span> ../assets .</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check deployed assets match source</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">diff</span> <span class="at">-r</span> assets/images docs/assets/images</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="file-structure" class="level2">
@@ -281,33 +318,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>/
 ├── _quarto.yml                 # Main website configuration
 ├── index.qmd                   # Language selection page
-├── assets/                     # Shared assets
-│   ├── css/custom.css         # Custom styling
-│   ├── images/                # Book diagrams and illustrations
-│   └── crypto-cover1.jpg      # Book cover image
+├── assets/                     # Centralized assets (version controlled)
+│   ├── covers/                # Book covers with language suffixes
+│   │   ├── crypto-cover1.jpg
+│   │   ├── crypto-jason-cover-zh-tw.pdf
+│   │   └── crypto-jason-cover-full.pdf
+│   ├── docs/                  # Documentation files
+│   │   ├── OnChainCommercer（初版).pdf
+│   │   └── PAPERBACK_6.000x9.000_204_BW_WHITE_en_US.pdf
+│   └── images/                # Diagrams, logos, CSS
+│       ├── Ch3-6-pillars.jpg
+│       ├── ch2-overview.jpg
+│       ├── Ch9-F2C-System.jpg
+│       ├── Ch9-F2C-USDC-Wallet.jpg
+│       ├── css/custom.css
+│       └── proofbound-logo-*.svg
 ├── en/                        # English version
 │   ├── _quarto.yml           # English book configuration
+│   ├── assets -&gt; ../assets   # Symlink for PDF rendering
 │   ├── index.qmd             # English preface
-│   ├── intro.qmd             # English introduction
 │   ├── CH01-*.qmd            # English chapters
-│   └── docs/                 # Generated English HTML
+│   └── docs/                 # Generated English HTML + PDF
 ├── zh/                       # Simplified Chinese version
 │   ├── _quarto.yml          # Chinese book configuration
+│   ├── assets -&gt; ../assets   # Symlink for PDF rendering
 │   ├── index.qmd            # Chinese preface
-│   ├── intro.qmd            # Chinese introduction
 │   ├── CH01-*.zh.qmd        # Chinese chapters
-│   └── docs/                # Generated Chinese HTML
+│   └── docs/                # Generated Chinese HTML + PDF
 ├── zh-tw/                   # Traditional Chinese version
 │   ├── _quarto.yml         # Traditional Chinese configuration
+│   ├── assets -&gt; ../assets   # Symlink for PDF rendering
 │   ├── index.qmd           # Traditional Chinese preface  
-│   ├── intro.qmd           # Traditional Chinese introduction
 │   ├── CH01-*.zh.qmd       # Traditional Chinese chapters
-│   └── docs/               # Generated Traditional Chinese HTML
+│   └── docs/               # Generated Traditional Chinese HTML + PDF
 └── docs/                   # Main output for GitHub Pages
     ├── index.html         # Language selection page
-    ├── en/               # English book files
-    ├── zh/               # Simplified Chinese book files
-    └── zh-tw/            # Traditional Chinese book files</code></pre>
+    ├── assets/            # Deployed centralized assets
+    │   ├── covers/
+    │   └── images/
+    ├── en/               # English book files + assets copy
+    │   ├── *.html
+    │   ├── Global-Business-Chain.pdf
+    │   └── assets/
+    ├── zh/               # Simplified Chinese book files + assets copy
+    │   ├── *.html
+    │   ├── 萬國商鏈.pdf
+    │   └── assets/
+    └── zh-tw/            # Traditional Chinese book files + assets copy
+        ├── *.html
+        ├── 萬國商鏈.pdf
+        └── assets/</code></pre>
 </section>
 <section id="content-editing" class="level2">
 <h2 class="anchored" data-anchor-id="content-editing">Content Editing</h2>
@@ -374,9 +434,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="asset-paths" class="level3">
 <h3 class="anchored" data-anchor-id="asset-paths">Asset Paths</h3>
 <ul>
-<li>Always use <code>assets/</code> not <code>_resources/</code> for asset paths</li>
-<li>GitHub Pages ignores directories starting with underscore</li>
-<li>Images should be referenced as <code>/assets/images/filename.jpg</code></li>
+<li>Always use <code>/assets/images/filename.jpg</code> paths in content files (works for both HTML and PDF)</li>
+<li><strong>CRITICAL</strong>: Never use <code>_resources/</code> paths (GitHub Pages ignores underscore directories)</li>
+<li>Cover images use <code>/assets/covers/filename.jpg</code> paths</li>
+<li>CSS references use <code>/assets/images/css/custom.css</code> path</li>
 </ul>
 </section>
 <section id="chinese-publishing-conventions" class="level3">
@@ -404,6 +465,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Update all language versions when making structural changes</li>
 <li>Test rendering of all languages before deployment</li>
 </ul>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="missing-images-on-github-pages" class="level3">
+<h3 class="anchored" data-anchor-id="missing-images-on-github-pages">Missing Images on GitHub Pages</h3>
+<p><strong>Problem</strong>: Images display locally but not on GitHub Pages <strong>Solution</strong>: 1. Check if images exist in <code>/docs/assets/images/</code> and all <code>/docs/{lang}/assets/images/</code> directories 2. Run asset copying commands from deployment process above 3. Verify image filenames match exactly (case-sensitive)</p>
+</section>
+<section id="pdf-generation-fails" class="level3">
+<h3 class="anchored" data-anchor-id="pdf-generation-fails">PDF Generation Fails</h3>
+<p><strong>Problem</strong>: XeLaTeX cannot find images during PDF rendering <strong>Solution</strong>: 1. Ensure asset symlinks exist: <code>ls -la en/assets zh/assets zh-tw/assets</code> 2. Create missing symlinks: <code>cd {lang}/ &amp;&amp; ln -sf ../assets .</code> 3. Verify images use <code>/assets/images/</code> paths in content files</p>
+</section>
+<section id="build-process-issues" class="level3">
+<h3 class="anchored" data-anchor-id="build-process-issues">Build Process Issues</h3>
+<p><strong>Problem</strong>: Some files missing after deployment <strong>Solution</strong>: Always follow the complete build process in exact order: 1. Main page → 2. All language versions → 3. Copy files → 4. Copy assets → 5. Commit</p>
+</section>
+<section id="asset-management-best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="asset-management-best-practices">Asset Management Best Practices</h3>
+<ul>
+<li><strong>Single Source</strong>: All assets in <code>/assets/</code> directory only</li>
+<li><strong>Version Control</strong>: Assets directory is tracked by git (not in .gitignore)</li>
+<li><strong>Deployment</strong>: Assets must be copied to all deployment directories</li>
+<li><strong>Cover Images</strong>: Must be copied to each language’s assets/covers/ directory for proper relative path resolution</li>
+<li><strong>Verification</strong>: Always check deployed assets match source before pushing</li>
+</ul>
+</section>
+<section id="cover-image-deployment-issue" class="level3">
+<h3 class="anchored" data-anchor-id="cover-image-deployment-issue">Cover Image Deployment Issue</h3>
+<p><strong>Problem</strong>: Cover images not displaying on GitHub Pages in language subdirectories <strong>Root Cause</strong>: Quarto renders relative paths like <code>./assets/covers/crypto-cover1.jpg</code> which fail in subdirectories <strong>Solution</strong>: 1. Update <code>cover-image</code> paths in all <code>_quarto.yml</code> files to use absolute paths: <code>/assets/covers/filename.jpg</code> 2. Copy cover images to each language’s deployment directory: <code>docs/{lang}/assets/covers/</code> 3. Re-render all language versions to generate correct HTML paths</p>
 
 
 </section>
